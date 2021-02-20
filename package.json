@@ -1,0 +1,44 @@
+{
+    "name": "SDDT",
+    "version": "1.0.0",
+    "description": "Sensitive Data Detection Tool",
+    "main": "main.js",
+    "scripts": {
+        "lint": "npx eslint . || exit 0",
+        "lint:fix": "npx eslint ./src --fix || exit 0",
+        "htmlhint": "npx htmlhint ./public || exit 0",
+        "test": "npm run lint && npm run htmlhint",
+        "start": "electron ."
+    },
+    "author": "",
+    "license": "ISC",
+    "keywords": [
+        "websocket"
+    ],
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^8.2.0",
+        "eslint": "^7.9.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsdoc": "^30.5.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+        "express-session": "^1.17.1",
+        "express-ws": "^4.0.0",
+        "hbs": "^4.1.1",
+        "htmlhint": "^0.14.1",
+        "http-errors": "~1.6.3",
+        "node-fetch": "^2.6.0",
+        "serve-favicon": "^2.5.0",
+        "standard": "*",
+        "stylelint": "^13.7.1",
+        "ws": "^7.3.1",
+        "wscat": "^4.0.1"
+    },
+    "devDependencies": {
+        "electron": "^11.2.2"
+    }
+}
