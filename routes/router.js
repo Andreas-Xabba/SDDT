@@ -8,6 +8,14 @@ routerExports.router = router
 router.get('/', controller.renderIndex)
 router.post('/', controller.filesPosted)
 
+router.get('/analyze', controller.renderAnalyze)
+
+router.get('/history', controller.renderHistory)
+
+router.get('/statistics', controller.renderStatistics)
+
+router.get('/settings', controller.renderSettings)
+
 routerExports.send = (message) => {
   controller.send(message)
 }

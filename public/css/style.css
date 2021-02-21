@@ -1,0 +1,17 @@
+:root {
+    --clr-background:  rgb(193, 194, 196);
+    --clr-primary:  rgb(127, 148, 192);
+    --clr-accent: rgb(95, 142, 231);
+    --clr-text: rgb(235, 241, 253);
+    --clr-text-hover: rgb(29, 104, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}

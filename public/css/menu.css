@@ -1,0 +1,34 @@
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu-wrapper {
+
+}
+
+.main-menu-list {
+    padding: 5px 5px;
+    margin: 0;
+    background-color: var(--clr-background);
+    border-bottom: 1px solid var(--clr-primary);
+}
+
+.main-menu-list li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.main-menu-list li a {
+    color: var(--clr-primary);
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu-list li a:hover, .main-menu-list li a:focus {
+    color: var(--clr-accent);
+}
+
