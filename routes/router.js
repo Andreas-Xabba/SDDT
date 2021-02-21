@@ -6,6 +6,7 @@ module.exports = routerExports
 
 routerExports.router = router
 router.get('/', controller.renderIndex)
+router.post('/', controller.filesPosted)
 
 routerExports.send = (message) => {
   controller.send(message)

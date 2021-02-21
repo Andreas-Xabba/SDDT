@@ -7,8 +7,14 @@ app.on('ready', () => {
     width: 1000,
     autoHideMenuBar: true,
     useContentSize: true,
-    resizable: true
+    resizable: true,
+    webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true
+    }
   })
+
+  mainWindow.webContents.openDevTools()
   mainWindow.loadURL('http://localhost:8080/')
   mainWindow.focus()
 })
