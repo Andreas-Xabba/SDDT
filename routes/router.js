@@ -8,7 +8,7 @@ routerExports.router = router
 router.get('/', controller.renderIndex)
 router.post('/', controller.filesPosted)
 
-router.get('/analyze', controller.renderAnalyze)
+router.get('/scan', controller.renderScan)
 
 router.get('/history', controller.renderHistory)
 

@@ -12,8 +12,8 @@ controller.filesPosted = (req, res) => {
   console.log('files posted')
 }
 
-controller.renderAnalyze = (req, res) => {
-  res.render('analyze', { layout: 'main' })
+controller.renderScan = (req, res) => {
+  res.render('scan', { layout: 'main' })
 }
 
 controller.renderHistory = (req, res) => {
