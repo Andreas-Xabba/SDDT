@@ -16,6 +16,9 @@ scanner.scan = async (file) => {
   console.log(filePaths)
 
   return new Promise((resolve, reject) => {
+    for (const filePath of filePaths) {
+      const file = _readFile(filePath)
+    }
     setTimeout(() => {
       resolve('scanID')
     }, 5000)
@@ -33,4 +36,18 @@ function _findFilesRecursive (Directory) {
     }
   })
   return moreFiles
+}
+
+function _readFile (filePath) {
+  const file = fileService.readFileSync(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err)
+    } else {
+      return data
+    }
+  })
+  const linesOfText = file.split('\r\n')
+  for (let i = 0; i < linesOfText.length; i++) {
+    console.log(`[${i}]${linesOfText[i]}`)
+  }
 }

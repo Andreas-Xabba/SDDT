@@ -1,0 +1,28 @@
+{
+    "filters": [
+        {
+          "name": "All",
+          "extensions": []
+        },
+        {
+          "name": "Text Files",
+          "extensions": ["txt", "docx"]
+        },
+        {
+          "name": "Java Files",
+         "extensions": ["java"]
+        },
+        {
+          "name": "HTML Files",
+          "extensions": ["html", "htm"]
+        },
+        {
+          "name": "CSS Files",
+          "extensions": ["css", "sass", "less"]
+        },
+        {
+          "name": "Javascript Files",
+          "extensions": ["js"]
+        }
+      ]
+}

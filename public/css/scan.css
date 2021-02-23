@@ -107,15 +107,16 @@
 
 .scan-message-wrapper {
     position: absolute;
-    bottom: 140px;
-    left: 0;
     right: 0;
+    left: auto;
+    bottom: 30px;
     top: auto;
-    height: 20px;
+    width: 130px;
 }
 
 .scan-message {
-    position: relative;
+    position: absolute;
     font-size: 20px;
-    left: 40%;
+    right: auto;
+    left: 0;
 }

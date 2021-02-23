@@ -2,9 +2,17 @@
 (function () {
   'use strict'
   const electron = require('electron')
-  // const { createReadStream } = require('fs')
+  const fileService = require('fs')
   const path = require('path')
   const dialog = electron.remote.dialog
+
+  const extensionFilters = JSON.parse(fileService.readFileSync('./resources/fileextensions.json', 'utf8', (err, data) => {
+    if (err) {
+      console.log(err)
+    } else {
+      return data
+    }
+  })).filters
 
   let selectedFile = ''
   let fileSelectMode = 'openFile'
@@ -62,11 +70,6 @@
       fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
       _startScanTimer(0)
     }
-
-    /*
-      const stream = createReadStream(global.filepath)
-      fetch('http://localhost:8080/', { method: 'POST', body: stream }) //eslint-disable-line
-     */
   })
 
   function openFolderSelectDialog () {
@@ -74,29 +77,9 @@
       title: 'Select the File to be uploaded',
       defaultPath: path.join(__dirname, '../assets/'),
       buttonLabel: 'Select',
-      filters: getFilters(),
+      filters: extensionFilters,
       properties: [fileSelectMode]
     })
-  }
-
-  function getFilters () {
-    const textFilesExt = ['txt', 'docx']
-    const javaFilesExt = ['java']
-
-    return [
-      {
-        name: 'All',
-        extensions: [...textFilesExt, ...javaFilesExt]
-      },
-      {
-        name: 'Text Files',
-        extensions: textFilesExt
-      },
-      {
-        name: 'Java Files',
-        extensions: javaFilesExt
-      }
-    ]
   }
 
   const scanMessage = document.getElementById('scanMessage')
