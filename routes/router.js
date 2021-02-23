@@ -9,6 +9,7 @@ router.get('/', controller.renderIndex)
 router.post('/', controller.filesPosted)
 
 router.get('/scan', controller.renderScan)
+router.post('/scan', controller.scanFiles)
 
 router.get('/history', controller.renderHistory)
 

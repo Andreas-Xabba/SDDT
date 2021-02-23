@@ -1,3 +1,5 @@
+const scanner = require('../utilities/scanner')
+
 const controller = {}
 module.exports = controller
 
@@ -14,6 +16,12 @@ controller.filesPosted = (req, res) => {
 
 controller.renderScan = (req, res) => {
   res.render('scan', { layout: 'main' })
+}
+
+controller.scanFiles = (req, res) => {
+  console.log('scan files')
+  console.log(req.body)
+  scanner.scan(req.body.path)
 }
 
 controller.renderHistory = (req, res) => {

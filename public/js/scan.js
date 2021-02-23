@@ -4,10 +4,9 @@
   const electron = require('electron')
   // const { createReadStream } = require('fs')
   const path = require('path')
-  const fileService = require('fs')
   const dialog = electron.remote.dialog
 
-  let selectedFiles = []
+  let selectedFile = ''
   let fileSelectMode = 'openFile'
 
   const selectFilesButton = document.getElementById('selectFilesButton')
@@ -16,8 +15,11 @@
     if (process.platform !== 'darwin') {
       openFolderSelectDialog().then(file => {
         if (!file.canceled) {
+          selectedFile = file.filePaths[0].toString()
+          /*
           selectedFiles = []
           addFileToList(file)
+          */
         }
       }).catch(err => {
         console.log(err)
@@ -25,8 +27,11 @@
     } else {
       openFolderSelectDialog().then(file => {
         if (!file.canceled) {
+          selectedFile = file.filePaths[0].toString()
+          /*
           selectedFiles = []
           addFileToList(file)
+          */
         }
       }).catch(err => {
         console.log(err)
@@ -55,7 +60,13 @@
 
   startScanButton.addEventListener('click', (event) => {
     console.log('START SCAN')
-    console.log(selectedFiles)
+    console.log(selectedFile)
+    const scanMessage = {}
+    scanMessage.path = selectedFile
+    scanMessage.mode = fileSelectMode
+
+    fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
+
     /*
       const stream = createReadStream(global.filepath)
       fetch('http://localhost:8080/', { method: 'POST', body: stream }) //eslint-disable-line
@@ -90,23 +101,5 @@
         extensions: javaFilesExt
       }
     ]
-  }
-
-  function findFilesRecursive (Directory) {
-    fileService.readdirSync(Directory).forEach(File => {
-      const absolutePath = path.join(Directory, File)
-      if (fileService.statSync(absolutePath).isDirectory()) return findFilesRecursive(absolutePath)
-      else return selectedFiles.push(absolutePath)
-    })
-  }
-
-  function addFileToList (file) {
-    console.log(file.filePaths[0].toString())
-    const filePath = file.filePaths[0].toString()
-    if (fileService.statSync(filePath).isDirectory()) {
-      findFilesRecursive(filePath)
-    } else {
-      selectedFiles.push(file.filePaths[0].toString())
-    }
   }
 })()
