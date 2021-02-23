@@ -1,3 +1,5 @@
+const { webContents } = require('electron')
+
 const scanner = require('../utilities/scanner')
 
 const controller = {}
@@ -18,10 +20,20 @@ controller.renderScan = (req, res) => {
   res.render('scan', { layout: 'main' })
 }
 
-controller.scanFiles = (req, res) => {
+controller.renderScanResult = (req, res, next) => {
+  const scanID = req.params.scanID
+  console.log(scanID)
+
+  res.render('history', { layout: 'main' })
+}
+
+controller.scanFiles = async (req, res) => {
   console.log('scan files')
   console.log(req.body)
-  scanner.scan(req.body.path)
+  scanner.scan(req.body).then((scanID) => {
+    webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${scanID}`) // manually loading redirect url into electron window
+    // res.redirect(`/history/${scanID}`)
+  })
 }
 
 controller.renderHistory = (req, res) => {

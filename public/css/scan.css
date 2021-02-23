@@ -11,7 +11,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 20px;
     border-bottom: 1px solid white;
 }
 
@@ -30,7 +31,7 @@
     cursor: pointer;
 }
 
-label:before {
+.radio-button-label:before {
     position: absolute;
     content: "";
     height: 10px;
@@ -53,15 +54,30 @@ label:before {
 
 .selectFilesButton {
     color: var(--clr-text);
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .select-file-wrapper {
     position: relative;
-    border: 1px solid red;
+    border-bottom: 1px solid white;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 20px;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.select-scan-options-wrapper {
+    position: relative;
+    border-bottom: 1px solid white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .start-scan-wrapper {
@@ -83,4 +99,8 @@ label:before {
     outline: none;
     border: 1px solid var(--clr-shadows);
 
+}
+
+.selected-file-label {
+    margin-left: 20px;
 }

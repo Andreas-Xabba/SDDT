@@ -3,26 +3,34 @@ const path = require('path')
 
 const scanner = {}
 module.exports = scanner
-let filePaths = []
 
-scanner.scan = (filepath) => {
-  filePaths = []
-  _addFileToList(filepath)
-  console.log(filepath)
+scanner.scan = async (file) => {
+  let filePaths = []
+  if (file.mode === 'openFile') {
+    console.log('file')
+    filePaths.push(file.path)
+  } else {
+    console.log('directory')
+    filePaths = _findFilesRecursive(file.path)
+  }
   console.log(filePaths)
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('scanID')
+    }, 3000)
+  })
 }
 
 function _findFilesRecursive (Directory) {
+  let moreFiles = []
   fileService.readdirSync(Directory).forEach(File => {
     const absolutePath = path.join(Directory, File)
-    if (fileService.statSync(absolutePath).isDirectory()) return _findFilesRecursive(absolutePath)
-    else return filePaths.push(absolutePath)
+    if (fileService.statSync(absolutePath).isDirectory()) {
+      moreFiles = [...moreFiles, ..._findFilesRecursive(absolutePath)]
+    } else {
+      moreFiles.push(absolutePath)
+    }
   })
-}
-function _addFileToList (filePath) {
-  if (fileService.statSync(filePath).isDirectory()) {
-    _findFilesRecursive(filePath)
-  } else {
-    filePaths.push(filePath)
-  }
+  return moreFiles
 }

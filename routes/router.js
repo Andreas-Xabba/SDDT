@@ -12,6 +12,7 @@ router.get('/scan', controller.renderScan)
 router.post('/scan', controller.scanFiles)
 
 router.get('/history', controller.renderHistory)
+router.get('/history/:scanID', controller.renderScanResult)
 
 router.get('/statistics', controller.renderStatistics)
 

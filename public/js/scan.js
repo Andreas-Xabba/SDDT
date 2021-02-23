@@ -10,16 +10,14 @@
   let fileSelectMode = 'openFile'
 
   const selectFilesButton = document.getElementById('selectFilesButton')
+  const selectedFileLabel = document.getElementById('selectedFileLabel')
 
   selectFilesButton.addEventListener('click', () => {
     if (process.platform !== 'darwin') {
       openFolderSelectDialog().then(file => {
         if (!file.canceled) {
           selectedFile = file.filePaths[0].toString()
-          /*
-          selectedFiles = []
-          addFileToList(file)
-          */
+          selectedFileLabel.innerHTML = selectedFile
         }
       }).catch(err => {
         console.log(err)
@@ -28,10 +26,7 @@
       openFolderSelectDialog().then(file => {
         if (!file.canceled) {
           selectedFile = file.filePaths[0].toString()
-          /*
-          selectedFiles = []
-          addFileToList(file)
-          */
+          selectedFileLabel.innerHTML = selectedFile
         }
       }).catch(err => {
         console.log(err)
@@ -59,13 +54,13 @@
   const startScanButton = document.getElementById('startScanButton')
 
   startScanButton.addEventListener('click', (event) => {
-    console.log('START SCAN')
-    console.log(selectedFile)
-    const scanMessage = {}
-    scanMessage.path = selectedFile
-    scanMessage.mode = fileSelectMode
-
-    fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
+    if (selectedFile !== '') {
+      console.log(`START SCAN OF: ${selectedFile}`)
+      const scanMessage = {}
+      scanMessage.path = selectedFile
+      scanMessage.mode = fileSelectMode
+      fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
+    }
 
     /*
       const stream = createReadStream(global.filepath)
