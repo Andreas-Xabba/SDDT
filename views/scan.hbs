@@ -1,12 +1,19 @@
 <link rel="stylesheet" type="text/css" href="/css/scan.css" />
-<div class="file-select-mode-radio-buttons-wrapper">
-    <h4>Mode</h4>
-    <input type="radio" class="file-select-mode-radio-button" id="singleFileModeRadioButton" checked="checked" name="file-select-mode">
-    <label class="radio-button-label" for="singleFileModeRadioButton">Single File</label>
-        
-    <input type="radio" class="file-select-mode-radio-button" id="directoryModeRadioButton" name="file-select-mode">
-    <label class="radio-button-label" for="directoryModeRadioButton">Directory</label>
+<div class="scan-wrapper">
+    <div class="file-select-mode-radio-buttons-wrapper">
+        <h4>Mode</h4>
+        <input type="radio" class="file-select-mode-radio-button" id="singleFileModeRadioButton" checked="checked" name="file-select-mode">
+        <label class="radio-button-label" for="singleFileModeRadioButton">Single File</label>
+            
+        <input type="radio" class="file-select-mode-radio-button" id="directoryModeRadioButton" name="file-select-mode">
+        <label class="radio-button-label" for="directoryModeRadioButton">Directory</label>
+    </div>
+    <div class="select-file-wrapper">
+        <button id="selectFilesButton" class="selectFilesButton">Select Files</button>
+    </div>
+    <div class="start-scan-wrapper">
+        <button id="startScanButton" class="startScanButton">Scan</button>
+    </div>
 </div>
 
-<button id="selectFilesButton">Select Files</button>
-<script src="/js/selectFiles.js"></script>
+<script src="/js/scan.js"></script>

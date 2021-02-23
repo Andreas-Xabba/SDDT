@@ -1,11 +1,18 @@
+.scan-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+
 .file-select-mode-radio-buttons-wrapper {
     position: relative;
     left: 0;
     top: 0;
-    width: 200px;
-    height: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 5px;
-    border: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .file-select-mode-radio-button {
@@ -42,4 +49,38 @@ label:before {
 
 .file-select-mode-radio-button:checked + label:before {
     background-color: white;
+}
+
+.selectFilesButton {
+    color: var(--clr-text);
+}
+
+.select-file-wrapper {
+    position: relative;
+    border: 1px solid red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 20px;
+}
+
+.start-scan-wrapper {
+    position: absolute;
+    text-align: center;
+    border: 1px solid green;
+    top: auto;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+
+.startScanButton {
+    width: 140px;
+    height: 75px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--clr-text);
+    outline: none;
+    border: 1px solid var(--clr-shadows);
+
 }

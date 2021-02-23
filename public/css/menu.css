@@ -4,14 +4,9 @@ h4 {
 }
 
 .main-menu-wrapper {
-    width: 90%;
-    margin: 20px auto;
+    display: block;
+    margin:0;
     padding: 0 10px;
-    border-radius: 30px;
-    border: 1px solid white;
-    background: white;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-    box-shadow: 5px 5px 10px var(--clr-shadows);
 }
 
 .main-menu-list {
