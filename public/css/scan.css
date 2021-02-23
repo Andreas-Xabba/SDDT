@@ -104,3 +104,18 @@
 .selected-file-label {
     margin-left: 20px;
 }
+
+.scan-message-wrapper {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    right: 0;
+    top: auto;
+    height: 20px;
+}
+
+.scan-message {
+    position: relative;
+    font-size: 20px;
+    left: 40%;
+}

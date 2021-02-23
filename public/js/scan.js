@@ -60,6 +60,7 @@
       scanMessage.path = selectedFile
       scanMessage.mode = fileSelectMode
       fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
+      _startScanTimer(0)
     }
 
     /*
@@ -96,5 +97,22 @@
         extensions: javaFilesExt
       }
     ]
+  }
+
+  const scanMessage = document.getElementById('scanMessage')
+
+  function _startScanTimer (dots) {
+    let message = 'Scanning'
+    for (let i = 0; i < dots; i++) {
+      message += ' .'
+    }
+    scanMessage.innerHTML = message
+    setTimeout(() => {
+      if (dots === 3) {
+        _startScanTimer(0)
+      } else {
+        _startScanTimer(++dots)
+      }
+    }, 500)
   }
 })()

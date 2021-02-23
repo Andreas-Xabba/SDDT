@@ -18,7 +18,7 @@ scanner.scan = async (file) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('scanID')
-    }, 3000)
+    }, 5000)
   })
 }
 
