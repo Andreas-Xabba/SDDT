@@ -14,10 +14,22 @@
     </div>
     <div class="select-scan-options-wrapper">
         <h4>Scan Options</h4>
+        <ul class="scan-options-list">
+            <li><input type="checkbox" id="nameCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="nameCheckbox" class="scan-options-list-label">Name</label></li>
+            <li><input type="checkbox" id="SSNCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="SSNCheckbox" class="scan-options-list-label">Social security number</label></li>
+            <li><input type="checkbox" id="IPCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="IPCheckbox" class="scan-options-list-label">IP address</label></li>
+            <li><input type="checkbox" id="passwordCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="passwordCheckbox" class="scan-options-list-label">Password</label></li>
+            <li><input type="checkbox" id="keyCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="keyCheckbox" class="scan-options-list-label">Key</label></li>
+        </ul>
     </div>
     <div class="start-scan-wrapper">
-        <button id="startScanButton" class="startScanButton">Scan</button>
+        <button id="startScanButton" class="start-scan-button">Scan</button>
         <div class="scan-message-wrapper"><h4 id="scanMessage" class="scan-message"></h4></div>
+    </div>
+    <div class="select-result-file-name-wrapper">
+        <h4>Result Options</h4>
+        <label for="selectResultFileNameInput" class="select-result-file-name-label">File Name</label>
+        <input type="text" id="selectResultFileNameInput" class="select-result-file-name-input">
     </div>
 </div>
 

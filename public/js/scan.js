@@ -61,12 +61,24 @@
 
   const startScanButton = document.getElementById('startScanButton')
 
+  const nameCheckbox = document.getElementById('nameCheckbox')
+  const SSNCheckbox = document.getElementById('SSNCheckbox')
+  const IPCheckbox = document.getElementById('IPCheckbox')
+  const passwordCheckbox = document.getElementById('passwordCheckbox')
+  const keyCheckbox = document.getElementById('keyCheckbox')
+
   startScanButton.addEventListener('click', (event) => {
     if (selectedFile !== '') {
       console.log(`START SCAN OF: ${selectedFile}`)
       const scanMessage = {}
       scanMessage.path = selectedFile
       scanMessage.mode = fileSelectMode
+      scanMessage.name = nameCheckbox.checked
+      scanMessage.ssn = SSNCheckbox.checked
+      scanMessage.ip = IPCheckbox.checked
+      scanMessage.password = passwordCheckbox.checked
+      scanMessage.key = keyCheckbox.checked
+
       fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
       _startScanTimer(0)
     }

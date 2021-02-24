@@ -89,7 +89,7 @@
     right: 0;
 }
 
-.startScanButton {
+.start-scan-button {
     width: 140px;
     height: 75px;
     border-radius: 50%;
@@ -118,4 +118,40 @@
     font-size: 20px;
     right: auto;
     left: 0;
+}
+
+.scan-options-list {
+    list-style: none;
+}
+
+.select-result-file-name-wrapper {
+    position: relative;
+    border-bottom: 1px solid white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.select-result-file-name-input {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.select-result-file-name-label {
+    margin: 20px;
+}
+
+.scan-options-list-item {
+
+}
+
+.scan-options-list-item:checked, .scan-options-list-item:hover {
+
+}
+
+.scan-options-list-label {
+    margin-left: 10px;
 }
