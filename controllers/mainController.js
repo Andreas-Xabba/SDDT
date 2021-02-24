@@ -17,7 +17,7 @@ controller.filesPosted = (req, res) => {
 }
 
 controller.renderScan = (req, res) => {
-  res.render('scan', { layout: 'main' })
+  res.render('scan', { layout: 'main', menuSelected: 'scan' })
 }
 
 controller.renderScanResult = (req, res, next) => {

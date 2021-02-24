@@ -2,7 +2,14 @@
 <div class="main-menu-wrapper">
     <ul class="main-menu-list">
         <li><a href="/">Home</a></li>
+        
+        {{#ifEquals menuSelected "scan"}}
+        <li><a href="/scan" class="main-menu-list-selected">Scan</a></li>
+        {{else}}
         <li><a href="/scan">Scan</a></li>
+        {{/ifEquals}}
+        
+        
         <li><a href="/statistics">Statistics</a></li>
         <li><a href="/history">History</a></li>
         <li><a href="/settings">Settings</a></li>

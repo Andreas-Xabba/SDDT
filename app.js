@@ -10,6 +10,7 @@ const cookieParser = require('cookie-parser')
 // const session = require('express-session')
 const favicon = require('serve-favicon')
 const exphbs = require('express-handlebars')
+const Handlebars = require('handlebars')
 
 const expressApp = express()
 const expressWs = require('express-ws')(expressApp) //eslint-disable-line
@@ -40,14 +41,6 @@ expressApp.use(cookieParser())
 const mainRouter = require('./routes/router')
 mainRouter.addClientsReference(expressWs.getWss().clients)
 
-/*
-expressApp.use(session({
-  resave: false,
-  saveUninitialized: false,
-  secret: 'nyan cat is better'
-}))
-*/
-
 expressApp.use('/', mainRouter.router)
 
 expressApp.use(function (req, res, next) {
@@ -59,6 +52,10 @@ expressApp.use(function (err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {}
   res.status(err.status || 500)
   res.render('error')
+})
+
+Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
+  return (arg1 === arg2) ? options.fn(this) : options.inverse(this)
 })
 
 expressApp.listen(PORT)
