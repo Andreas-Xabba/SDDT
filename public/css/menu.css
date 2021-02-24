@@ -15,16 +15,9 @@ h4 {
     font-size: 20px;
     margin: 0;
     padding: 0;
-}
-
-.main-menu-list li:first-child {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-.main-menu-list li:last-child {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    border-collapse: collapse;
 }
 
 .main-menu-list li {

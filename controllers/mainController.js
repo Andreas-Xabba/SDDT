@@ -8,7 +8,7 @@ module.exports = controller
 let clients
 
 controller.renderIndex = (req, res) => {
-  res.render('index', { layout: 'main' })
+  res.render('index', { layout: 'main', menuSelected: 'index' })
 }
 
 controller.filesPosted = (req, res) => {
@@ -24,7 +24,7 @@ controller.renderScanResult = (req, res, next) => {
   const scanID = req.params.scanID
   console.log(scanID)
 
-  res.render('history', { layout: 'main' })
+  res.render('history', { layout: 'main', menuSelected: 'history' })
 }
 
 controller.scanFiles = async (req, res) => {
@@ -37,15 +37,15 @@ controller.scanFiles = async (req, res) => {
 }
 
 controller.renderHistory = (req, res) => {
-  res.render('history', { layout: 'main' })
+  res.render('history', { layout: 'main', menuSelected: 'history' })
 }
 
 controller.renderStatistics = (req, res) => {
-  res.render('statistics', { layout: 'main' })
+  res.render('statistics', { layout: 'main', menuSelected: 'statistics' })
 }
 
 controller.renderSettings = (req, res) => {
-  res.render('settings', { layout: 'main' })
+  res.render('settings', { layout: 'main', menuSelected: 'settings' })
 }
 
 controller.addClientsReference = (clientsRef) => {

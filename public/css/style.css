@@ -10,13 +10,14 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right top, #659edf, #6ca3eb)
+    background: linear-gradient(to right top, #659edf, #6ca3eb);
 }
 
 main {
     display: block;
     margin: 0;
     padding: 0;
+    min-width: 500px;
 }
 
 .main-window-menu {
@@ -29,6 +30,7 @@ main {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     box-shadow: 5px 5px 10px var(--clr-shadows);
+    min-width: 400px;
 }
 
 .main-inner-window {
@@ -44,4 +46,5 @@ main {
     box-shadow: 5px 5px 10px var(--clr-shadows);
     color: var(--clr-text);
     min-height: 400px;
+    min-width: 400px;
 }
