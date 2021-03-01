@@ -4,7 +4,7 @@ const path = require('path')
 const scanner = {}
 module.exports = scanner
 
-scanner.scan = async (file) => {
+scanner.scan = async (file, filters) => {
   let filePaths = []
   if (file.mode === 'openFile') {
     console.log('file')
@@ -18,6 +18,8 @@ scanner.scan = async (file) => {
   return new Promise((resolve, reject) => {
     for (const filePath of filePaths) {
       const file = _readFile(filePath)
+      const lines = _parseFileToLines(file)
+      filters[0].filter(lines)
     }
     setTimeout(() => {
       resolve('scanID')
@@ -46,8 +48,9 @@ function _readFile (filePath) {
       return data
     }
   })
-  const linesOfText = file.split('\r\n')
-  for (let i = 0; i < linesOfText.length; i++) {
-    console.log(`[${i}]${linesOfText[i]}`)
-  }
+  return file
+}
+
+function _parseFileToLines (file) {
+  return file.split('\r\n')
 }

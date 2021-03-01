@@ -7,7 +7,6 @@ dotenv.config()
 const PORT = process.env.PORT
 const createError = require('http-errors')
 const cookieParser = require('cookie-parser')
-// const session = require('express-session')
 const favicon = require('serve-favicon')
 const exphbs = require('express-handlebars')
 const Handlebars = require('handlebars')
