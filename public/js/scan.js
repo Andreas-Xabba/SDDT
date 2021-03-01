@@ -66,9 +66,11 @@
   const IPCheckbox = document.getElementById('IPCheckbox')
   const passwordCheckbox = document.getElementById('passwordCheckbox')
   const keyCheckbox = document.getElementById('keyCheckbox')
+  const selectResultFileNameInput = document.getElementById('selectResultFileNameInput')
 
   startScanButton.addEventListener('click', (event) => {
-    if (selectedFile !== '') {
+    if (selectedFile !== '' && selectResultFileNameInput.value !== '') {
+      let varia = 'my name is Andreas'
       console.log(`START SCAN OF: ${selectedFile}`)
       const scanMessage = {}
       scanMessage.path = selectedFile
@@ -78,6 +80,7 @@
       scanMessage.ip = IPCheckbox.checked
       scanMessage.password = passwordCheckbox.checked
       scanMessage.key = keyCheckbox.checked
+      scanMessage.saveFileName = selectResultFileNameInput.value
 
       fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
       _startScanTimer(0)
@@ -85,6 +88,7 @@
   })
 
   function openFolderSelectDialog () {
+    const test = '123.125.13.13'
     return dialog.showOpenDialog({
       title: 'Select the File to be uploaded',
       defaultPath: path.join(__dirname, '../assets/'),

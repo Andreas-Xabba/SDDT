@@ -29,28 +29,29 @@ const nameX = []
 const nameY = []
 const nameZ = []
 
-nameFilter.filter = (strings) => {
+nameFilter.filter = (candidates) => {
   const result = []
-  let i = 1
-  for (const string of strings) {
-    const stringParts = string.split(' ')
-    for (const stringPart of stringParts) {
-      if (stringPart !== '') {
-        const nameBase = [..._getNameBase(stringPart)]
+  for (const candidate of candidates) {
+    // const stringParts = string.split(' ')
+    for (const candidateString of candidate.strings) {
+      for (const string of candidateString.split(' ')) {
+        const nameBase = [..._getNameBase(string)]
         for (const name of nameBase) {
           // if (stringPart.toLowerCase().includes(name.toLowerCase())) {
-          if (stringPart.localeCompare(name, undefined, { sensitivity: 'accent' }) === 0) {
+          if (string.localeCompare(name, undefined, { sensitivity: 'accent' }) === 0) {
             result.push({
-              row: i,
-              match: name
+              line: candidate.line,
+              completeString: candidateString,
+              match: string,
+              type: 'name'
             })
+            break
           } else {
             // empty
           }
         }
       }
     }
-    i++
   }
   return result
 }

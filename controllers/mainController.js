@@ -2,6 +2,7 @@ const { webContents } = require('electron')
 
 const scanner = require('../utilities/scanner')
 const nameFilter = require('../utilities/filters/namefilter')
+const ipFilter = require('../utilities/filters/ipfilter')
 
 const controller = {}
 module.exports = controller
@@ -32,8 +33,8 @@ controller.scanFiles = async (req, res) => {
   console.log('scan files')
   console.log(req.body)
   await nameFilter.initiate()
-  scanner.scan(req.body, [nameFilter]).then((scanID) => {
-    webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${scanID}`) // manually loading redirect url into electron window
+  scanner.scan(req.body, [nameFilter, ipFilter]).then((results) => {
+    webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${req.body.saveFileName}`) // manually loading redirect url into electron window
     // res.redirect(`/history/${scanID}`)
   }).catch(err => {
     console.log(err)
