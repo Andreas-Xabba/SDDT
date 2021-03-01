@@ -16,14 +16,22 @@ scanner.scan = async (file, filters) => {
   console.log(filePaths)
 
   return new Promise((resolve, reject) => {
+    const finalResults = []
     for (const filePath of filePaths) {
       const file = _readFile(filePath)
       const lines = _parseFileToLines(file)
-      filters[0].filter(lines)
+      console.log(lines)
+      const result = filters[0].filter(lines)
+      finalResults.push({
+        file: filePath,
+        result: result
+      })
     }
-    setTimeout(() => {
-      resolve('scanID')
-    }, 5000)
+    for (const res of finalResults) {
+      console.log(res.file)
+      console.log(res.result)
+    }
+    resolve('scanID')
   })
 }
 
