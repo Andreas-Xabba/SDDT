@@ -70,7 +70,6 @@
 
   startScanButton.addEventListener('click', (event) => {
     if (selectedFile !== '' && selectResultFileNameInput.value !== '') {
-      let varia = 'my name is Andreas'
       console.log(`START SCAN OF: ${selectedFile}`)
       const scanMessage = {}
       scanMessage.path = selectedFile
@@ -88,7 +87,6 @@
   })
 
   function openFolderSelectDialog () {
-    const test = '123.125.13.13'
     return dialog.showOpenDialog({
       title: 'Select the File to be uploaded',
       defaultPath: path.join(__dirname, '../assets/'),

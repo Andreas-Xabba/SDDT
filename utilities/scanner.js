@@ -29,19 +29,14 @@ scanner.scan = async (file, filters) => {
           })
         }
       }
-      /*
-      console.log(candidates)
-      const result = filters[0].filter(candidates)
-      const result2 = filters[1].filter(candidates)
-      console.log(result2)
-      */
+
       let results = []
       for (const filter of filters) {
         results = [...results, ...filter.filter(candidates)]
       }
 
       finalResults.push({
-        file: filePath,
+        absolutePath: filePath,
         result: results
       })
     }

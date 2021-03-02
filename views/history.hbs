@@ -1,1 +1,23 @@
-<h2>History</h2>
+<link rel="stylesheet" type="text/css" href="/css/history.css" />
+<div class="history-wrapper">
+    <div class="select-file-wrapper" id="selectFileWrapper">
+        <div class="history-file-selector-wrapper">
+            <label>Scan</label>
+            <select class="history-file-selector" id="historyFileSelector" size="10"></select>
+        </div>
+        <div class="selected-file-selector-wrapper">
+            <label>File</label>
+            <select class="selected-file-selector" id="selectedFileSelector" size="10"></select>
+        </div>
+        <div class="selected-file-type-selector" id="selectedFileTypeSelector">
+            <label>Data</label>
+        </div>
+    </div>
+    
+</div>
+
+<script src="/js/history.js"></script>
+<script>initiateHistoryList({{{historyFiles}}}, "{{{selectedFile}}}")</script>
+{{#if selectedFileData}}
+<script>displaySelectedFile({{{selectedFileData}}})</script>
+{{/if}}

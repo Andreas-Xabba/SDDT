@@ -1,0 +1,56 @@
+{
+  "timestamp": "Tue Mar 02 2021 17:48:25 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\history.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\menu.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\scan.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\style.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\favicon.ico",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\history.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
+      "result": [
+        {
+          "line": 24,
+          "completeString": "darwin",
+          "match": "darwin",
+          "type": "name"
+        },
+        {
+          "line": 91,
+          "completeString": "Select the File to be uploaded",
+          "match": "the",
+          "type": "name"
+        },
+        {
+          "line": 91,
+          "completeString": "Select the File to be uploaded",
+          "match": "be",
+          "type": "name"
+        }
+      ]
+    }
+  ]
+}
