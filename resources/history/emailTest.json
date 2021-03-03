@@ -1,0 +1,42 @@
+{
+  "timestamp": "Wed Mar 03 2021 21:01:51 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\history.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
+      "result": [
+        {
+          "line": 24,
+          "completeString": "  * A comment section Andreas",
+          "match": "Andreas",
+          "type": "name"
+        },
+        {
+          "line": 28,
+          "completeString": "darwin",
+          "match": "darwin",
+          "type": "name"
+        },
+        {
+          "line": 25,
+          "completeString": "  * And also with an ip 135.135.135.135",
+          "match": "135.135.135.135",
+          "type": "ip"
+        },
+        {
+          "line": 53,
+          "completeString": "random@someemail.com",
+          "match": "random@someemail.com",
+          "type": "email"
+        }
+      ]
+    }
+  ]
+}

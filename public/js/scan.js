@@ -50,6 +50,7 @@
   const directoryModeRadioButton = document.getElementById('directoryModeRadioButton')
 
   singleFileModeRadioButton.addEventListener('change', (event) => {
+    const emayle = 'So I tossen in a random@someemail.com in this String'
     if (singleFileModeRadioButton.checked) {
       console.log('checked: singleFileModeRadioButton')
       fileSelectMode = 'openFile'
@@ -66,7 +67,7 @@
   const startScanButton = document.getElementById('startScanButton')
 
   const nameCheckbox = document.getElementById('nameCheckbox')
-  const SSNCheckbox = document.getElementById('SSNCheckbox')
+  const emailCheckbox = document.getElementById('emailCheckbox')
   const IPCheckbox = document.getElementById('IPCheckbox')
   const passwordCheckbox = document.getElementById('passwordCheckbox')
   const keyCheckbox = document.getElementById('keyCheckbox')
@@ -83,7 +84,7 @@
         mode: fileSelectMode,
         types: {
           name: nameCheckbox.checked,
-          ssn: SSNCheckbox.checked,
+          email: emailCheckbox.checked,
           ip: IPCheckbox.checked,
           password: passwordCheckbox.checked,
           key: keyCheckbox.checked

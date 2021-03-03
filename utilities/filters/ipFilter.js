@@ -5,7 +5,6 @@ module.exports = ipFilter
 ipFilter.filter = (candidates) => {
   const result = []
   for (const candidate of candidates) {
-    // const stringParts = string.split(' ')
     for (const candidateString of candidate.strings) {
       for (const string of candidateString.split(' ')) {
         const potentialAddress = string.match(/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/)
@@ -17,7 +16,6 @@ ipFilter.filter = (candidates) => {
               match: string,
               type: 'ip'
             })
-            console.log(string)
           }
         }
       }

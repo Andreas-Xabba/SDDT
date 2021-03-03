@@ -2,8 +2,6 @@ const { webContents } = require('electron')
 const fileService = require('fs')
 
 const scanner = require('../utilities/scanner')
-const nameFilter = require('../utilities/filters/namefilter')
-const ipFilter = require('../utilities/filters/ipfilter')
 
 const controller = {}
 module.exports = controller
@@ -30,20 +28,19 @@ controller.renderScanResult = (req, res, next) => {
       // render error
     } else {
       console.log(data)
-      const historyFiles = await _importHistoryFileNames()
+      const historyFiles = _importHistoryFileNames()
       res.render('history', { layout: 'main', menuSelected: 'history', historyFiles: JSON.stringify(historyFiles), selectedFileData: data, selectedFile: req.params.scanID })
     }
   })
 }
 
 controller.scanFiles = async (req, res) => {
-  console.log('scan files')
-  console.log(req.body)
-  await nameFilter.initiate()
-  scanner.scan(req.body, [nameFilter, ipFilter]).then(async (results) => { // LOAD FILTERS ACCORDING TO REQ.BODY
+  const scanRequest = req.body
+
+  scanner.scan(scanRequest).then(async (results) => {
     try {
-      await _trySaveResults(req.body.saveFileName, results)
-      webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${req.body.saveFileName}.json`) // manually loading redirect url into electron window
+      await _trySaveResults(scanRequest.saveFileName, results)
+      webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${scanRequest.saveFileName}.json`) // manually loading redirect url into electron window
     } catch (error) {
       console.log(error)
     }
@@ -54,7 +51,7 @@ controller.scanFiles = async (req, res) => {
 }
 
 controller.renderHistory = async (req, res) => {
-  const historyFiles = await _importHistoryFileNames()
+  const historyFiles = _importHistoryFileNames()
 
   res.render('history', { layout: 'main', menuSelected: 'history', historyFiles: JSON.stringify(historyFiles) })
 }
@@ -81,7 +78,7 @@ async function _trySaveResults (fileName, results) {
   fileService.writeFileSync(newFile, JSON.stringify(saveData, null, 2))
 }
 
-async function _importHistoryFileNames () {
+function _importHistoryFileNames () {
   const files = fileService.readdirSync('resources/history/')
   return { data: files }
 }

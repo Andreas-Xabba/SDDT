@@ -102,8 +102,8 @@ function _displayItem (item, path) {
   <span><b>Type:</b> ${item.type}</span>
   <span><b>File Path:</b> ${path}</span>
   <span><b>Line:</b> ${item.line}</span>
-  <span><b>Complete String:</b> "${item.completeString}"</span>
-  <span><b>Data:</b> ${item.match}</span>
+  <span style="margin-top: 10px;"><b>Complete String:</b> "${item.completeString}"</span>
+  <span style="margin-top: 5px;"><b>Data:</b> ${item.match}</span>
   `
   displayString = displayString.replaceAll(item.match, `<span class="inline-text-error">${item.match}</span>`)
   showItemWrapper.innerHTML = displayString

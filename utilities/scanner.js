@@ -1,10 +1,21 @@
 const fileService = require('fs')
 const path = require('path')
 
+const nameFilter = require('../utilities/filters/nameFilter')
+const ipFilter = require('../utilities/filters/ipFilter')
+const emailFilter = require('../utilities/filters/emailFilter')
+
 const scanner = {}
 module.exports = scanner
 
-scanner.scan = async (file, filters) => {
+scanner.scan = async (scanRequest) => {
+  const filters = []
+  if (scanRequest.types.name) { filters.push(nameFilter) }
+  if (scanRequest.types.email) { filters.push(emailFilter) }
+  if (scanRequest.types.ip) { filters.push(ipFilter) }
+
+  await nameFilter.initiate()
+
   const allExcludeExtensions = JSON.parse(fileService.readFileSync('./resources/exclude_extensions.json', 'utf8', (err, data) => {
     if (err) {
       console.log(err)
@@ -23,10 +34,10 @@ scanner.scan = async (file, filters) => {
   })).directories
 
   let filePaths = []
-  if (file.mode === 'openFile') {
-    filePaths.push(file.path)
+  if (scanRequest.mode === 'openFile') {
+    filePaths.push(scanRequest.path)
   } else {
-    filePaths = _findFilesRecursive(file.path, excludeDirectories)
+    filePaths = _findFilesRecursive(scanRequest.path, excludeDirectories)
   }
 
   return new Promise((resolve, reject) => {
@@ -40,7 +51,7 @@ scanner.scan = async (file, filters) => {
         let isCommentSection = false
         for (const line of lines) {
           lineCounter++
-          const lineData = _identifyStrings(line, isCommentSection, file.options.comments)
+          const lineData = _identifyStrings(line, isCommentSection, scanRequest.options.comments)
           isCommentSection = lineData.commentSection
           if (lineData.identifiedStrings.length > 0) {
             candidates.push({

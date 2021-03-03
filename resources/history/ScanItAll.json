@@ -1,5 +1,5 @@
 {
-  "timestamp": "Wed Mar 03 2021 18:01:14 GMT+0100 (centraleuropeisk normaltid)",
+  "timestamp": "Wed Mar 03 2021 21:26:05 GMT+0100 (centraleuropeisk normaltid)",
   "results": [
     {
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\.env",
@@ -17,21 +17,21 @@
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\controllers\\mainController.js",
       "result": [
         {
-          "line": 23,
+          "line": 21,
           "completeString": "scan",
           "match": "scan",
           "type": "name"
         },
         {
-          "line": 23,
+          "line": 21,
           "completeString": "scan",
           "match": "scan",
           "type": "name"
         },
         {
-          "line": 40,
-          "completeString": "scan files",
-          "match": "scan",
+          "line": 28,
+          "completeString": " render error",
+          "match": "render",
           "type": "name"
         }
       ]
@@ -72,10 +72,28 @@
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
       "result": [
         {
+          "line": 24,
+          "completeString": "  * A comment section Andreas",
+          "match": "Andreas",
+          "type": "name"
+        },
+        {
           "line": 28,
           "completeString": "darwin",
           "match": "darwin",
           "type": "name"
+        },
+        {
+          "line": 53,
+          "completeString": "So I tossen in a random@someemail.com in this String",
+          "match": "random@someemail.com",
+          "type": "email"
+        },
+        {
+          "line": 25,
+          "completeString": "  * And also with an ip 135.135.135.135",
+          "match": "135.135.135.135",
+          "type": "ip"
         }
       ]
     },
@@ -92,133 +110,16 @@
       "result": []
     },
     {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\emailFilter.js",
+      "result": []
+    },
+    {
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\ipFilter.js",
       "result": []
     },
     {
-      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\namefilter.js",
-      "result": [
-        {
-          "line": 71,
-          "completeString": "b",
-          "match": "b",
-          "type": "name"
-        },
-        {
-          "line": 75,
-          "completeString": "c",
-          "match": "c",
-          "type": "name"
-        },
-        {
-          "line": 79,
-          "completeString": "d",
-          "match": "d",
-          "type": "name"
-        },
-        {
-          "line": 103,
-          "completeString": "j",
-          "match": "j",
-          "type": "name"
-        },
-        {
-          "line": 107,
-          "completeString": "k",
-          "match": "k",
-          "type": "name"
-        },
-        {
-          "line": 119,
-          "completeString": "n",
-          "match": "n",
-          "type": "name"
-        },
-        {
-          "line": 135,
-          "completeString": "r",
-          "match": "r",
-          "type": "name"
-        },
-        {
-          "line": 139,
-          "completeString": "s",
-          "match": "s",
-          "type": "name"
-        },
-        {
-          "line": 143,
-          "completeString": "t",
-          "match": "t",
-          "type": "name"
-        },
-        {
-          "line": 151,
-          "completeString": "v",
-          "match": "v",
-          "type": "name"
-        },
-        {
-          "line": 183,
-          "completeString": "b",
-          "match": "b",
-          "type": "name"
-        },
-        {
-          "line": 186,
-          "completeString": "c",
-          "match": "c",
-          "type": "name"
-        },
-        {
-          "line": 189,
-          "completeString": "d",
-          "match": "d",
-          "type": "name"
-        },
-        {
-          "line": 207,
-          "completeString": "j",
-          "match": "j",
-          "type": "name"
-        },
-        {
-          "line": 210,
-          "completeString": "k",
-          "match": "k",
-          "type": "name"
-        },
-        {
-          "line": 219,
-          "completeString": "n",
-          "match": "n",
-          "type": "name"
-        },
-        {
-          "line": 231,
-          "completeString": "r",
-          "match": "r",
-          "type": "name"
-        },
-        {
-          "line": 234,
-          "completeString": "s",
-          "match": "s",
-          "type": "name"
-        },
-        {
-          "line": 237,
-          "completeString": "t",
-          "match": "t",
-          "type": "name"
-        },
-        {
-          "line": 243,
-          "completeString": "v",
-          "match": "v",
-          "type": "name"
-        }
-      ]
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\nameFilter.js",
+      "result": []
     },
     {
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\scanner.js",
@@ -234,14 +135,7 @@
     },
     {
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\layouts\\main.hbs",
-      "result": [
-        {
-          "line": 7,
-          "completeString": "Sensitive Data Discover Tool",
-          "match": "Tool",
-          "type": "name"
-        }
-      ]
+      "result": []
     },
     {
       "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\partials\\mainMenu.hbs",
