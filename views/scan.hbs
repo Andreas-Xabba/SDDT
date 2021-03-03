@@ -13,14 +13,22 @@
         <button id="selectFilesButton" class="selectFilesButton">Select</button><label id="selectedFileLabel" for="selectFilesButton" class="selected-file-label"></label>
     </div>
     <div class="select-scan-options-wrapper">
-        <h4>Scan Options</h4>
-        <ul class="scan-options-list">
-            <li><input type="checkbox" id="nameCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="nameCheckbox" class="scan-options-list-label">Name</label></li>
-            <li><input type="checkbox" id="SSNCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="SSNCheckbox" class="scan-options-list-label">Social security number</label></li>
-            <li><input type="checkbox" id="IPCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="IPCheckbox" class="scan-options-list-label">IP address</label></li>
-            <li><input type="checkbox" id="passwordCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="passwordCheckbox" class="scan-options-list-label">Password</label></li>
-            <li><input type="checkbox" id="keyCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="keyCheckbox" class="scan-options-list-label">Key</label></li>
-        </ul>
+        <div class="select-scan-options-inner-wrapper">
+            <h4>Data Type Options</h4>
+            <ul class="scan-options-list">
+                <li><input type="checkbox" id="nameCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="nameCheckbox" class="scan-options-list-label">Name</label></li>
+                <li><input type="checkbox" id="SSNCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="SSNCheckbox" class="scan-options-list-label">Social security number</label></li>
+                <li><input type="checkbox" id="IPCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="IPCheckbox" class="scan-options-list-label">IP address</label></li>
+                <li><input type="checkbox" id="passwordCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="passwordCheckbox" class="scan-options-list-label">Password</label></li>
+                <li><input type="checkbox" id="keyCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="keyCheckbox" class="scan-options-list-label">Key</label></li>
+            </ul>
+        </div>
+        <div class="select-scan-options-inner-wrapper">
+            <h4>Scan Options</h4>
+            <ul class="scan-options-list">
+                <li><input type="checkbox" id="commentsCheckbox" name="options" class="scan-options-list-item" checked="checked"><label for="commentsCheckbox" class="scan-options-list-label">Include Comments</label></li>
+            </ul>
+        </div>
     </div>
     <div class="start-scan-wrapper">
         <button id="startScanButton" class="start-scan-button">Scan</button>

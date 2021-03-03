@@ -20,6 +20,10 @@
   const selectFilesButton = document.getElementById('selectFilesButton')
   const selectedFileLabel = document.getElementById('selectedFileLabel')
 
+  /*
+  * A comment section Andreas
+  * And also with an ip 135.135.135.135
+  */
   selectFilesButton.addEventListener('click', () => {
     if (process.platform !== 'darwin') {
       openFolderSelectDialog().then(file => {
@@ -68,18 +72,26 @@
   const keyCheckbox = document.getElementById('keyCheckbox')
   const selectResultFileNameInput = document.getElementById('selectResultFileNameInput')
 
+  const commentsCheckbox = document.getElementById('commentsCheckbox')
+
   startScanButton.addEventListener('click', (event) => {
     if (selectedFile !== '' && selectResultFileNameInput.value !== '') {
       console.log(`START SCAN OF: ${selectedFile}`)
-      const scanMessage = {}
-      scanMessage.path = selectedFile
-      scanMessage.mode = fileSelectMode
-      scanMessage.name = nameCheckbox.checked
-      scanMessage.ssn = SSNCheckbox.checked
-      scanMessage.ip = IPCheckbox.checked
-      scanMessage.password = passwordCheckbox.checked
-      scanMessage.key = keyCheckbox.checked
-      scanMessage.saveFileName = selectResultFileNameInput.value
+      const scanMessage = {
+        path: selectedFile,
+        saveFileName: selectResultFileNameInput.value,
+        mode: fileSelectMode,
+        types: {
+          name: nameCheckbox.checked,
+          ssn: SSNCheckbox.checked,
+          ip: IPCheckbox.checked,
+          password: passwordCheckbox.checked,
+          key: keyCheckbox.checked
+        },
+        options: {
+          comments: commentsCheckbox.checked
+        }
+      }
 
       fetch('http://localhost:8080/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(scanMessage) }) //eslint-disable-line
       _startScanTimer(0)

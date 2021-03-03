@@ -40,7 +40,7 @@ controller.scanFiles = async (req, res) => {
   console.log('scan files')
   console.log(req.body)
   await nameFilter.initiate()
-  scanner.scan(req.body, [nameFilter, ipFilter]).then(async (results) => {
+  scanner.scan(req.body, [nameFilter, ipFilter]).then(async (results) => { // LOAD FILTERS ACCORDING TO REQ.BODY
     try {
       await _trySaveResults(req.body.saveFileName, results)
       webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${req.body.saveFileName}.json`) // manually loading redirect url into electron window

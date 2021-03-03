@@ -15,16 +15,18 @@ scanner.scan = async (file, filters) => {
   return new Promise((resolve, reject) => {
     const finalResults = []
     for (const filePath of filePaths) {
-      const file = _readFile(filePath)
-      const lines = _parseFileToLines(file)
+      const fileAsString = _readFile(filePath)
+      const lines = _parseFileToLines(fileAsString)
       const candidates = []
       let lineCounter = 0
+      let isCommentSection = false
       for (const line of lines) {
         lineCounter++
-        const strings = _identifyStrings(line)
-        if (strings.length > 0) {
+        const lineData = _identifyStrings(line, isCommentSection, file.options.comments)
+        isCommentSection = lineData.commentSection
+        if (lineData.identifiedStrings.length > 0) {
           candidates.push({
-            strings: strings,
+            strings: lineData.identifiedStrings,
             line: lineCounter
           })
         }
@@ -73,35 +75,76 @@ function _readFile (filePath) {
 }
 
 function _parseFileToLines (file) {
-  return file.split('\r\n')
+  if (file.includes('\r\n')) {
+    return file.split('\r\n')
+  } else {
+    return file.split('\n')
+  }
 }
 
-function _identifyStrings (line) {
+function _identifyStrings (line, isComment, commentsEnabled) {
+  const lineData = {
+    commentSection: false,
+    identifiedStrings: []
+  }
   const identifiedStrings = []
   const openCharacters = []
   let openCharactersCounter = 0
-
-  for (let i = 0; i < line.length; i++) {
-    const currCharacter = line.charAt(i)
-    if (currCharacter === "'" || currCharacter === '"') {
-      if (i > 0 && line.charAt(i - 1) !== '\\') {
-        if (openCharactersCounter > 0 && openCharacters[openCharactersCounter - 1].character === currCharacter) {
-          openCharactersCounter--
-          if (openCharactersCounter === 0) {
-            const string = line.substring(openCharacters[openCharactersCounter].position, i)
+  if (isComment) {
+    if (!line.includes('*/')) {
+      lineData.commentSection = true
+    }
+    if (commentsEnabled) {
+      lineData.identifiedStrings.push(line)
+    }
+    return lineData
+  } else {
+    for (let i = 0; i < line.length; i++) {
+      const currCharacter = line.charAt(i)
+      if (currCharacter === '/') {
+        if (line.charAt(i + 1) === '/') {
+          if (commentsEnabled) {
+            const string = line.substring(i + 2, line.length)
             if (string !== '') {
               identifiedStrings.push(string)
             }
           }
-        } else {
-          openCharacters[openCharactersCounter] = {
-            character: currCharacter,
-            position: i + 1
+          lineData.identifiedStrings = identifiedStrings
+          return lineData
+        } else if (line.charAt(i + 1) === '*') {
+          if (commentsEnabled) {
+            const string = line.substring(i + 2, line.length)
+            if (string !== '') {
+              identifiedStrings.push(string)
+            }
           }
-          openCharactersCounter++
+          lineData.identifiedStrings = identifiedStrings
+          lineData.commentSection = true
+          return lineData
+        }
+      }
+
+      if (currCharacter === "'" || currCharacter === '"') {
+        if (i > 0 && line.charAt(i - 1) !== '\\') {
+          if (openCharactersCounter > 0 && openCharacters[openCharactersCounter - 1].character === currCharacter) {
+            openCharactersCounter--
+            if (openCharactersCounter === 0) {
+              const string = line.substring(openCharacters[openCharactersCounter].position, i)
+              if (string !== '') {
+                identifiedStrings.push(string)
+              }
+            }
+          } else {
+            openCharacters[openCharactersCounter] = {
+              character: currCharacter,
+              position: i + 1
+            }
+            openCharactersCounter++
+          }
         }
       }
     }
+    lineData.identifiedStrings = identifiedStrings
+    return lineData
   }
-  return identifiedStrings
 }

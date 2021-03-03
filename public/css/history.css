@@ -61,6 +61,11 @@ span {
     padding: 10px;
 }
 
+.show-file-info-wrapper {
+    display: block;
+    padding: 10px;
+}
+
 .inline-text-error {
     display: inline;
     color: rgb(212, 103, 103);

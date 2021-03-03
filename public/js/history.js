@@ -22,8 +22,10 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
   const selectedFileSelector = document.getElementById('selectedFileSelector')
   const selectedFileTypeSelector = document.getElementById('selectedFileTypeSelector')
   const selectedItemSelector = document.getElementById('selectedItemSelector')
+  const showFileInfoWrapper = document.getElementById('showFileInfoWrapper')
   let ItemsSortedByTypeArray = []
 
+  showFileInfoWrapper.innerHTML = `Timestamp: ${selectedFileData.timestamp}`
   const results = selectedFileData.results.sort((a, b) => (a.result.length > b.result.length) ? -1 : ((a.result.length < b.result.length) ? 1 : 0))
   for (let i = 0; i < results.length; i++) {
     const newOption = document.createElement('option')
@@ -80,6 +82,7 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
     })
   })
   selectedItemSelector.addEventListener('change', () => {
+    showFileInfoWrapper.style.display = 'none'
     _resetShowItem()
     _displayItem(ItemsSortedByTypeArray[selectedFileTypeSelector.selectedIndex].items[selectedItemSelector.selectedIndex], results[selectedFileSelector.selectedIndex].absolutePath)
   })
@@ -96,11 +99,11 @@ function _displayItem (item, path) {
 
   let displayString =
   `
-  <span>Type: ${item.type}</span>
-  <span>File Path: ${path}</span>
-  <span>Line: ${item.line}</span>
-  <span>Complete String: "${item.completeString}"</span>
-  <span>Data: ${item.match}</span>
+  <span><b>Type:</b> ${item.type}</span>
+  <span><b>File Path:</b> ${path}</span>
+  <span><b>Line:</b> ${item.line}</span>
+  <span><b>Complete String:</b> "${item.completeString}"</span>
+  <span><b>Data:</b> ${item.match}</span>
   `
   displayString = displayString.replaceAll(item.match, `<span class="inline-text-error">${item.match}</span>`)
   showItemWrapper.innerHTML = displayString
