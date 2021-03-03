@@ -50,6 +50,7 @@ controller.scanFiles = async (req, res) => {
   }).catch(err => {
     console.log(err)
   })
+  // LOAD ANOTHER URL MEANWHILE DATA IS BEING HANDLED TO AVOID "PROCESS DONT ANSWER"
 }
 
 controller.renderHistory = async (req, res) => {

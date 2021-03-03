@@ -5,6 +5,13 @@ const scanner = {}
 module.exports = scanner
 
 scanner.scan = async (file, filters) => {
+  const excludeExtensions = JSON.parse(fileService.readFileSync('./resources/imageextensions.json', 'utf8', (err, data) => {
+    if (err) {
+      console.log(err)
+    } else {
+      return data
+    }
+  })).extensions
   let filePaths = []
   if (file.mode === 'openFile') {
     filePaths.push(file.path)
@@ -15,37 +22,36 @@ scanner.scan = async (file, filters) => {
   return new Promise((resolve, reject) => {
     const finalResults = []
     for (const filePath of filePaths) {
-      const fileAsString = _readFile(filePath)
-      const lines = _parseFileToLines(fileAsString)
-      const candidates = []
-      let lineCounter = 0
-      let isCommentSection = false
-      for (const line of lines) {
-        lineCounter++
-        const lineData = _identifyStrings(line, isCommentSection, file.options.comments)
-        isCommentSection = lineData.commentSection
-        if (lineData.identifiedStrings.length > 0) {
-          candidates.push({
-            strings: lineData.identifiedStrings,
-            line: lineCounter
-          })
+      if (!excludeExtensions.includes(_getExtension(filePath))) {
+        const fileAsString = _readFile(filePath)
+        const lines = _parseFileToLines(fileAsString)
+        const candidates = []
+        let lineCounter = 0
+        let isCommentSection = false
+        for (const line of lines) {
+          lineCounter++
+          const lineData = _identifyStrings(line, isCommentSection, file.options.comments)
+          isCommentSection = lineData.commentSection
+          if (lineData.identifiedStrings.length > 0) {
+            candidates.push({
+              strings: lineData.identifiedStrings,
+              line: lineCounter
+            })
+          }
         }
-      }
 
-      let results = []
-      for (const filter of filters) {
-        results = [...results, ...filter.filter(candidates)]
-      }
+        let results = []
+        for (const filter of filters) {
+          results = [...results, ...filter.filter(candidates)]
+        }
 
-      finalResults.push({
-        absolutePath: filePath,
-        result: results
-      })
+        finalResults.push({
+          absolutePath: filePath,
+          result: results
+        })
+      }
     }
-    for (const res of finalResults) {
-      console.log(res.file)
-      console.log(res.result)
-    }
+
     resolve(finalResults)
   })
 }
@@ -147,4 +153,9 @@ function _identifyStrings (line, isComment, commentsEnabled) {
     lineData.identifiedStrings = identifiedStrings
     return lineData
   }
+}
+
+function _getExtension (filePath) {
+  const splitPath = filePath.split('.')
+  return `.${splitPath[splitPath.length - 1].toLowerCase()}`
 }
