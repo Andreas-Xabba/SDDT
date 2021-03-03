@@ -1,0 +1,160 @@
+{
+  "timestamp": "Wed Mar 03 2021 18:09:48 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\.env",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\.gitignore",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\app.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\controllers\\mainController.js",
+      "result": [
+        {
+          "line": 23,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        },
+        {
+          "line": 23,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        },
+        {
+          "line": 30,
+          "completeString": " render error",
+          "match": "render",
+          "type": "name"
+        },
+        {
+          "line": 40,
+          "completeString": "scan files",
+          "match": "scan",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\history.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\menu.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\scan.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\style.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\favicon.ico",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\history.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
+      "result": [
+        {
+          "line": 24,
+          "completeString": "  * A comment section Andreas",
+          "match": "Andreas",
+          "type": "name"
+        },
+        {
+          "line": 28,
+          "completeString": "darwin",
+          "match": "darwin",
+          "type": "name"
+        },
+        {
+          "line": 25,
+          "completeString": "  * And also with an ip 135.135.135.135",
+          "match": "135.135.135.135",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\README.md",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\resources\\names.csv",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\routes\\router.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\ipFilter.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\namefilter.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\scanner.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\history.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\index.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\layouts\\main.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\partials\\mainMenu.hbs",
+      "result": [
+        {
+          "line": 10,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\scan.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\settings.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\statistics.hbs",
+      "result": []
+    }
+  ]
+}

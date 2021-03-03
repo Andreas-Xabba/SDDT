@@ -5,18 +5,28 @@ const scanner = {}
 module.exports = scanner
 
 scanner.scan = async (file, filters) => {
-  const excludeExtensions = JSON.parse(fileService.readFileSync('./resources/imageextensions.json', 'utf8', (err, data) => {
+  const allExcludeExtensions = JSON.parse(fileService.readFileSync('./resources/exclude_extensions.json', 'utf8', (err, data) => {
     if (err) {
       console.log(err)
     } else {
       return data
     }
-  })).extensions
+  }))
+  const excludeExtensions = [...allExcludeExtensions.image_extensions, ...allExcludeExtensions.other]
+
+  const excludeDirectories = JSON.parse(fileService.readFileSync('./resources/module_directories.json', 'utf8', (err, data) => {
+    if (err) {
+      console.log(err)
+    } else {
+      return data
+    }
+  })).directories
+
   let filePaths = []
   if (file.mode === 'openFile') {
     filePaths.push(file.path)
   } else {
-    filePaths = _findFilesRecursive(file.path)
+    filePaths = _findFilesRecursive(file.path, excludeDirectories)
   }
 
   return new Promise((resolve, reject) => {
@@ -56,12 +66,15 @@ scanner.scan = async (file, filters) => {
   })
 }
 
-function _findFilesRecursive (Directory) {
+function _findFilesRecursive (Directory, excludeDirectories) {
   let moreFiles = []
   fileService.readdirSync(Directory).forEach(File => {
     const absolutePath = path.join(Directory, File)
+    console.log(File)
     if (fileService.statSync(absolutePath).isDirectory()) {
-      moreFiles = [...moreFiles, ..._findFilesRecursive(absolutePath)]
+      if (!excludeDirectories.includes(File)) {
+        moreFiles = [...moreFiles, ..._findFilesRecursive(absolutePath, excludeDirectories)]
+      }
     } else {
       moreFiles.push(absolutePath)
     }

@@ -25,7 +25,7 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
   const showFileInfoWrapper = document.getElementById('showFileInfoWrapper')
   let ItemsSortedByTypeArray = []
 
-  showFileInfoWrapper.innerHTML = `Timestamp: ${selectedFileData.timestamp}`
+  showFileInfoWrapper.innerHTML = `<b>Timestamp:</b> ${selectedFileData.timestamp}`
   const results = selectedFileData.results.sort((a, b) => (a.result.length > b.result.length) ? -1 : ((a.result.length < b.result.length) ? 1 : 0))
   for (let i = 0; i < results.length; i++) {
     const newOption = document.createElement('option')
