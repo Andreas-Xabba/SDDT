@@ -36,7 +36,7 @@ controller.renderScanResult = (req, res, next) => {
 
 controller.scanFiles = async (req, res) => {
   const scanRequest = req.body
-
+  console.log(scanRequest)
   scanner.scan(scanRequest).then(async (results) => {
     try {
       await _trySaveResults(scanRequest.saveFileName, results)
@@ -48,6 +48,11 @@ controller.scanFiles = async (req, res) => {
     console.log(err)
   })
   // LOAD ANOTHER URL MEANWHILE DATA IS BEING HANDLED TO AVOID "PROCESS DONT ANSWER"
+}
+
+controller.scanFilesCLI = async (scanRequest) => {
+  const results = await scanner.scan(scanRequest)
+  return results
 }
 
 controller.renderHistory = async (req, res) => {
