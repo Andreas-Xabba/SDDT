@@ -22,7 +22,9 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
   const selectedFileSelector = document.getElementById('selectedFileSelector')
   const selectedFileTypeSelector = document.getElementById('selectedFileTypeSelector')
   const selectedItemSelector = document.getElementById('selectedItemSelector')
+  const showItemWrapper = document.getElementById('showItemWrapper')
   const showFileInfoWrapper = document.getElementById('showFileInfoWrapper')
+  const itemUserOptionsWrapper = document.getElementById('itemUserOptionsWrapper')
   let ItemsSortedByTypeArray = []
 
   showFileInfoWrapper.innerHTML = `<b>Timestamp:</b> ${selectedFileData.timestamp}`
@@ -42,6 +44,9 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
   }
 
   selectedFileSelector.addEventListener('change', () => {
+    showFileInfoWrapper.style.display = 'block'
+    itemUserOptionsWrapper.style.display = 'none'
+    showItemWrapper.style.display = 'none'
     selectedItemSelector.innerHTML = ''
     selectedFileTypeSelector.innerHTML = ''
     ItemsSortedByTypeArray = []
@@ -71,6 +76,8 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
     }
 
     selectedFileTypeSelector.addEventListener('change', () => {
+      itemUserOptionsWrapper.style.display = 'none'
+      showItemWrapper.style.display = 'none'
       selectedItemSelector.innerHTML = ''
       for (const item of ItemsSortedByTypeArray[selectedFileTypeSelector.selectedIndex].items) {
         const newItemOption = document.createElement('option')
@@ -82,6 +89,8 @@ function displaySelectedFile(selectedFileData) { // eslint-disable-line
     })
   })
   selectedItemSelector.addEventListener('change', () => {
+    itemUserOptionsWrapper.style.display = 'block'
+    showItemWrapper.style.display = 'block'
     showFileInfoWrapper.style.display = 'none'
     _resetShowItem()
     _displayItem(ItemsSortedByTypeArray[selectedFileTypeSelector.selectedIndex].items[selectedItemSelector.selectedIndex], results[selectedFileSelector.selectedIndex].absolutePath)

@@ -1,0 +1,2981 @@
+{
+  "timestamp": "Sun Mar 07 2021 11:35:56 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\account.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\actions.cpp",
+      "result": [
+        {
+          "line": 154,
+          "completeString": "[Warning - Actions::registerEvent] Duplicate registered item with unique id: ",
+          "match": "unique",
+          "type": "name"
+        },
+        {
+          "line": 161,
+          "completeString": "[Warning - Actions::registerEvent] Duplicate registered item with unique id: ",
+          "match": "unique",
+          "type": "name"
+        },
+        {
+          "line": 271,
+          "completeString": "[Warning - Actions::registerLuaEvent] There is no id / aid / uid set for this event",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 271,
+          "completeString": "[Warning - Actions::registerLuaEvent] There is no id / aid / uid set for this event",
+          "match": "set",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\actions.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\ban.cpp",
+      "result": [
+        {
+          "line": 77,
+          "completeString": "reason",
+          "match": "reason",
+          "type": "name"
+        },
+        {
+          "line": 87,
+          "completeString": "reason",
+          "match": "reason",
+          "type": "name"
+        },
+        {
+          "line": 117,
+          "completeString": "reason",
+          "match": "reason",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\ban.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\baseevents.cpp",
+      "result": [
+        {
+          "line": 39,
+          "completeString": "[Warning - BaseEvents::loadFromXml] Can not load ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 106,
+          "completeString": "[Warning - Event::checkScript] Can not load ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 115,
+          "completeString": "[Warning - Event::checkScript] Can not load script: ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 136,
+          "completeString": "[Warning - Event::loadScript] Can not load script. ",
+          "match": "Can",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\baseevents.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\bed.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\bed.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\chat.cpp",
+      "result": [
+        {
+          "line": 51,
+          "completeString": "her",
+          "match": "her",
+          "type": "name"
+        },
+        {
+          "line": 316,
+          "completeString": "[Warning - Chat::load] Can not load script: ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 337,
+          "completeString": "[Warning - Chat::load] Can not load script: ",
+          "match": "Can",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\chat.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\CMakeLists.txt",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\combat.cpp",
+      "result": [
+        {
+          "line": 1125,
+          "completeString": "ValueCallback::getMinMaxValues - unknown callback type",
+          "match": "unknown",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\combat.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\condition.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\condition.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\configmanager.cpp",
+      "result": [
+        {
+          "line": 187,
+          "completeString": "Unknown",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 183,
+          "completeString": "127.0.0.1",
+          "match": "127.0.0.1",
+          "type": "ip"
+        },
+        {
+          "line": 189,
+          "completeString": "127.0.0.1",
+          "match": "127.0.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\configmanager.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\connection.cpp",
+      "result": [
+        {
+          "line": 146,
+          "completeString": " disconnected for exceeding packet per second limit.",
+          "match": "per",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\connection.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\const.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\container.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\container.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\creature.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\creature.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\creatureevent.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\creatureevent.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\cylinder.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\cylinder.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\database.cpp",
+      "result": [
+        {
+          "line": 55,
+          "completeString": "SHOW VARIABLES LIKE 'max_allowed_packet'",
+          "match": "LIKE",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\database.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\databasemanager.cpp",
+      "result": [
+        {
+          "line": 168,
+          "completeString": "UPDATE `server_config` SET `value` = '\" << value << \"' WHERE `config` = ",
+          "match": "SET",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\databasemanager.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\databasetasks.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\databasetasks.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\definitions.h",
+      "result": [
+        {
+          "line": 25,
+          "completeString": "Mark Samman",
+          "match": "Mark",
+          "type": "name"
+        },
+        {
+          "line": 25,
+          "completeString": "Mark Samman",
+          "match": "Samman",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\depotchest.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\depotchest.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\depotlocker.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\depotlocker.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\enums.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\events.cpp",
+      "result": [
+        {
+          "line": 57,
+          "completeString": "[Warning - Events::load] Can not load script: ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 74,
+          "completeString": "[Warning - Events::load] Unknown creature method: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 86,
+          "completeString": "[Warning - Events::load] Unknown party method: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 126,
+          "completeString": "[Warning - Events::load] Unknown player method: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 134,
+          "completeString": "[Warning - Events::load] Unknown monster method: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 137,
+          "completeString": "[Warning - Events::load] Unknown class: ",
+          "match": "Unknown",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\events.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\fileloader.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\fileloader.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\game.cpp",
+      "result": [
+        {
+          "line": 66,
+          "completeString": "Axe Fighting and Shielding",
+          "match": "Axe",
+          "type": "name"
+        },
+        {
+          "line": 69,
+          "completeString": "Magic Level and Shielding",
+          "match": "Magic",
+          "type": "name"
+        },
+        {
+          "line": 3257,
+          "completeString": "You can not add this player.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 3264,
+          "completeString": "You can not add this player.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 3537,
+          "completeString": "You may not yell unless you have reached level ",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 4040,
+          "completeString": "her",
+          "match": "her",
+          "type": "name"
+        },
+        {
+          "line": 4117,
+          "completeString": "{:s} loses {:d} mana due to your attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4124,
+          "completeString": "You lose {:d} mana due to your own attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4126,
+          "completeString": "You lose {:d} mana due to an attack by {:s}.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4134,
+          "completeString": "{:s} loses {:d} mana due to {:s} own attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4134,
+          "completeString": "her",
+          "match": "her",
+          "type": "name"
+        },
+        {
+          "line": 4136,
+          "completeString": "{:s} loses {:d} mana due to an attack by {:s}.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4234,
+          "completeString": "her",
+          "match": "her",
+          "type": "name"
+        },
+        {
+          "line": 4356,
+          "completeString": "{:s} loses {:d} mana due to your attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4363,
+          "completeString": "You lose {:d} mana due to your own attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4365,
+          "completeString": "You lose {:d} mana due to an attack by {:s}.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4373,
+          "completeString": "{:s} loses {:d} mana due to {:s} own attack.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4373,
+          "completeString": "her",
+          "match": "her",
+          "type": "name"
+        },
+        {
+          "line": 4375,
+          "completeString": "{:s} loses {:d} mana due to an attack by {:s}.",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 4720,
+          "completeString": "UPDATE `server_config` SET `value` = '\" << motdNum << \"' WHERE `config` = 'motd_num'",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 4724,
+          "completeString": "UPDATE `server_config` SET `value` = '\" << transformToSHA1(g_config.getString(ConfigManager::MOTD)) << \"' WHERE `config` = 'motd_hash'",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 4747,
+          "completeString": "UPDATE `server_config` SET `value` = '\" << playersRecord << \"' WHERE `config` = 'players_record'",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 4900,
+          "completeString": "Message of the Day",
+          "match": "Day",
+          "type": "name"
+        },
+        {
+          "line": 5599,
+          "completeString": "Duplicate unique id: ",
+          "match": "unique",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\game.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\globalevent.cpp",
+      "result": [
+        {
+          "line": 306,
+          "completeString": "record",
+          "match": "record",
+          "type": "name"
+        },
+        {
+          "line": 309,
+          "completeString": "[Error - GlobalEvent::configureEvent] No valid type \\\"",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 316,
+          "completeString": "[Error - GlobalEvent::configureEvent] No interval for globalevent with name ",
+          "match": "No",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\globalevent.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\groups.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\groups.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\guild.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\guild.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\house.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\house.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\housetile.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\housetile.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\inbox.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\inbox.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\ioguild.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\ioguild.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iologindata.cpp",
+      "result": [
+        {
+          "line": 50,
+          "completeString": "UPDATE `accounts` SET `premium_ends_at` = ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 100,
+          "completeString": "secret",
+          "match": "secret",
+          "type": "name"
+        },
+        {
+          "line": 129,
+          "completeString": "secret",
+          "match": "secret",
+          "type": "name"
+        },
+        {
+          "line": 188,
+          "completeString": "UPDATE `accounts` SET `type` = ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 298,
+          "completeString": "soul",
+          "match": "soul",
+          "type": "name"
+        },
+        {
+          "line": 299,
+          "completeString": "cap",
+          "match": "cap",
+          "type": "name"
+        },
+        {
+          "line": 300,
+          "completeString": "blessings",
+          "match": "blessings",
+          "type": "name"
+        },
+        {
+          "line": 322,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 363,
+          "completeString": "posy",
+          "match": "posy",
+          "type": "name"
+        },
+        {
+          "line": 374,
+          "completeString": " has Town ID ",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 408,
+          "completeString": "nick",
+          "match": "nick",
+          "type": "name"
+        },
+        {
+          "line": 678,
+          "completeString": "UPDATE `players` SET `lastlogin` = ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 696,
+          "completeString": "UPDATE `players` SET ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 984,
+          "completeString": "sid",
+          "match": "sid",
+          "type": "name"
+        },
+        {
+          "line": 987,
+          "completeString": "count",
+          "match": "count",
+          "type": "name"
+        },
+        {
+          "line": 1010,
+          "completeString": "UPDATE `players` SET `balance` = `balance` + ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 1059,
+          "completeString": "UPDATE `account_viplist` SET `description` = ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 1073,
+          "completeString": "UPDATE `accounts` SET `premium_ends_at` = ",
+          "match": "SET",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iologindata.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomap.cpp",
+      "result": [
+        {
+          "line": 93,
+          "completeString": "This map need to be upgraded by using the latest map editor version to be able to load correctly.",
+          "match": "able",
+          "type": "name"
+        },
+        {
+          "line": 98,
+          "completeString": "Unknown OTBM version detected.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 103,
+          "completeString": "This map need to be upgraded by using the latest map editor version to be able to load correctly.",
+          "match": "able",
+          "type": "name"
+        },
+        {
+          "line": 149,
+          "completeString": "Unknown map node.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 204,
+          "completeString": "Unknown header node.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 231,
+          "completeString": "Unknown tile node.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 340,
+          "completeString": "] Unknown tile attribute.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 349,
+          "completeString": "] Unknown node type.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 416,
+          "completeString": "Unknown town node.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 416,
+          "completeString": "Unknown town node.",
+          "match": "town",
+          "type": "name"
+        },
+        {
+          "line": 421,
+          "completeString": "Could not read town data.",
+          "match": "town",
+          "type": "name"
+        },
+        {
+          "line": 427,
+          "completeString": "Could not read town id.",
+          "match": "town",
+          "type": "name"
+        },
+        {
+          "line": 439,
+          "completeString": "Could not read town name.",
+          "match": "town",
+          "type": "name"
+        },
+        {
+          "line": 447,
+          "completeString": "Could not read town coordinates.",
+          "match": "town",
+          "type": "name"
+        },
+        {
+          "line": 462,
+          "completeString": "Unknown waypoint node.",
+          "match": "Unknown",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomap.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomapserialize.cpp",
+      "result": [
+        {
+          "line": 321,
+          "completeString": "UPDATE `houses` SET `owner` = ",
+          "match": "SET",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomapserialize.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomarket.cpp",
+      "result": [
+        {
+          "line": 50,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 80,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 105,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 182,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 219,
+          "completeString": "count",
+          "match": "count",
+          "type": "name"
+        },
+        {
+          "line": 243,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 264,
+          "completeString": "UPDATE `market_offers` SET `amount` = `amount` - ",
+          "match": "SET",
+          "type": "name"
+        },
+        {
+          "line": 304,
+          "completeString": "price",
+          "match": "price",
+          "type": "name"
+        },
+        {
+          "line": 326,
+          "completeString": "min",
+          "match": "min",
+          "type": "name"
+        },
+        {
+          "line": 327,
+          "completeString": "sum",
+          "match": "sum",
+          "type": "name"
+        },
+        {
+          "line": 328,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\iomarket.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\item.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\item.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\itemloader.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\items.cpp",
+      "result": [
+        {
+          "line": 38,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        },
+        {
+          "line": 76,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 132,
+          "completeString": "field",
+          "match": "field",
+          "type": "name"
+        },
+        {
+          "line": 164,
+          "completeString": "rune",
+          "match": "rune",
+          "type": "name"
+        },
+        {
+          "line": 169,
+          "completeString": "north",
+          "match": "north",
+          "type": "name"
+        },
+        {
+          "line": 170,
+          "completeString": "south",
+          "match": "south",
+          "type": "name"
+        },
+        {
+          "line": 172,
+          "completeString": "west",
+          "match": "west",
+          "type": "name"
+        },
+        {
+          "line": 188,
+          "completeString": "axe",
+          "match": "axe",
+          "type": "name"
+        },
+        {
+          "line": 202,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 203,
+          "completeString": "life",
+          "match": "life",
+          "type": "name"
+        },
+        {
+          "line": 207,
+          "completeString": "wine",
+          "match": "wine",
+          "type": "name"
+        },
+        {
+          "line": 210,
+          "completeString": "lava",
+          "match": "lava",
+          "type": "name"
+        },
+        {
+          "line": 213,
+          "completeString": "tea",
+          "match": "tea",
+          "type": "name"
+        },
+        {
+          "line": 214,
+          "completeString": "mead",
+          "match": "mead",
+          "type": "name"
+        },
+        {
+          "line": 499,
+          "completeString": "[Warning - Items::loadFromXml] No item id found",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 600,
+          "completeString": "[Warning - Items::parseItemNode] Unknown type: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 676,
+          "completeString": "[Warning - Items::parseItemNode] Unknown floorChange: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 687,
+          "completeString": "[Warning - Items::parseItemNode] Unknown corpseType: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 703,
+          "completeString": "[Warning - Items::parseItemNode] Unknown fluidSource: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 735,
+          "completeString": "[Warning - Items::parseItemNode] Unknown weaponType: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 767,
+          "completeString": "[Warning - Items::parseItemNode] Unknown slotType: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 775,
+          "completeString": "[Warning - Items::parseItemNode] Unknown ammoType: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 785,
+          "completeString": "[Warning - Items::parseItemNode] Unknown shootType: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 795,
+          "completeString": "[Warning - Items::parseItemNode] Unknown effect: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1184,
+          "completeString": "[Warning - Items::parseItemNode] Unknown field value: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1184,
+          "completeString": "[Warning - Items::parseItemNode] Unknown field value: ",
+          "match": "field",
+          "type": "name"
+        },
+        {
+          "line": 1212,
+          "completeString": "count",
+          "match": "count",
+          "type": "name"
+        },
+        {
+          "line": 1367,
+          "completeString": "[Warning - Items::parseItemNode] Unknown key value: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1373,
+          "completeString": " is not set as a bed-type",
+          "match": "set",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\items.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\lockfree.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\luascript.cpp",
+      "result": [
+        {
+          "line": 150,
+          "completeString": "Lua Script Error: Thing uid already taken.",
+          "match": "Lua",
+          "type": "name"
+        },
+        {
+          "line": 264,
+          "completeString": "Unknown variant type",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 467,
+          "completeString": "Lua Script Error: ",
+          "match": "Lua",
+          "type": "name"
+        },
+        {
+          "line": 933,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 2127,
+          "completeString": "tell",
+          "match": "tell",
+          "type": "name"
+        },
+        {
+          "line": 2128,
+          "completeString": "len",
+          "match": "len",
+          "type": "name"
+        },
+        {
+          "line": 2594,
+          "completeString": "Town",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 2595,
+          "completeString": "Town",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 2597,
+          "completeString": "Town",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 2598,
+          "completeString": "Town",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 2599,
+          "completeString": "Town",
+          "match": "Town",
+          "type": "name"
+        },
+        {
+          "line": 2806,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        },
+        {
+          "line": 2809,
+          "completeString": "race",
+          "match": "race",
+          "type": "name"
+        },
+        {
+          "line": 2813,
+          "completeString": "light",
+          "match": "light",
+          "type": "name"
+        },
+        {
+          "line": 2899,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 2901,
+          "completeString": "soul",
+          "match": "soul",
+          "type": "name"
+        },
+        {
+          "line": 3005,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 3009,
+          "completeString": "soul",
+          "match": "soul",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\luascript.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\mailbox.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\mailbox.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\map.cpp",
+      "result": [
+        {
+          "line": 99,
+          "completeString": "ERROR: Attempt to set tile on invalid coordinate ",
+          "match": "set",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\map.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\monster.cpp",
+      "result": [
+        {
+          "line": 64,
+          "completeString": "[Warning - Monster::Monster] Unknown event name: ",
+          "match": "Unknown",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\monster.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\monsters.cpp",
+      "result": [
+        {
+          "line": 820,
+          "completeString": "race",
+          "match": "race",
+          "type": "name"
+        },
+        {
+          "line": 834,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown race type ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 834,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown race type ",
+          "match": "race",
+          "type": "name"
+        },
+        {
+          "line": 842,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 869,
+          "completeString": "[Warning - Monsters::loadMonster] Can not load script: ",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 882,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 890,
+          "completeString": "[Warning - Monsters::loadMonster] Health now is greater than health max.",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 919,
+          "completeString": "[Warning - Monsters::loadMonster] staticattack greater than 100. ",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 932,
+          "completeString": "[Warning - Monsters::loadMonster] targetdistance less than 1. ",
+          "match": "less",
+          "type": "name"
+        },
+        {
+          "line": 932,
+          "completeString": "[Warning - Monsters::loadMonster] targetdistance less than 1. ",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 946,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown flag attribute: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 961,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 967,
+          "completeString": "chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 971,
+          "completeString": "[Warning - Monsters::loadMonster] targetchange chance value out of bounds. ",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1008,
+          "completeString": "mount",
+          "match": "mount",
+          "type": "name"
+        },
+        {
+          "line": 1033,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        },
+        {
+          "line": 1061,
+          "completeString": "earth",
+          "match": "earth",
+          "type": "name"
+        },
+        {
+          "line": 1067,
+          "completeString": "ice",
+          "match": "ice",
+          "type": "name"
+        },
+        {
+          "line": 1070,
+          "completeString": "holy",
+          "match": "holy",
+          "type": "name"
+        },
+        {
+          "line": 1091,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown immunity name ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1108,
+          "completeString": "earth",
+          "match": "earth",
+          "type": "name"
+        },
+        {
+          "line": 1118,
+          "completeString": "ice",
+          "match": "ice",
+          "type": "name"
+        },
+        {
+          "line": 1123,
+          "completeString": "holy",
+          "match": "holy",
+          "type": "name"
+        },
+        {
+          "line": 1162,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown immunity. ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1168,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 1174,
+          "completeString": "chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1178,
+          "completeString": "[Warning - Monsters::loadMonster] yell chance value out of bounds. ",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1218,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"physical\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1223,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"ice\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1228,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"earth\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1233,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"fire\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1238,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"energy\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1243,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"holy\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1248,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"death\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1253,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"drown\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1258,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"lifedrain\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1263,
+          "completeString": "[Warning - Monsters::loadMonster] Same element \\\"manadrain\\\" on immunity and element tags. ",
+          "match": "Same",
+          "type": "name"
+        },
+        {
+          "line": 1266,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown element percent. ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1284,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 1288,
+          "completeString": "chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1292,
+          "completeString": "[Warning - Monsters::loadMonster] Summon chance value out of bounds. ",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1296,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 1368,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown loot item id \\\"",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1379,
+          "completeString": "[Warning - Monsters::loadMonster] Unknown loot item \\\"",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 1400,
+          "completeString": " used for loot, the max allowed value is 100. ",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 1408,
+          "completeString": "chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 1411,
+          "completeString": " used for loot, the max is ",
+          "match": "max",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\monsters.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\mounts.cpp",
+      "result": [
+        {
+          "line": 47,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\mounts.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\movement.cpp",
+      "result": [
+        {
+          "line": 539,
+          "completeString": "Error: [MoveEvent::configureMoveEvent] No valid event name ",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 553,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        },
+        {
+          "line": 570,
+          "completeString": "[Warning - MoveEvent::configureMoveEvent] Unknown slot type: ",
+          "match": "Unknown",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\movement.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\networkmessage.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\networkmessage.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\npc.cpp",
+      "result": [
+        {
+          "line": 143,
+          "completeString": "[Error - Npc::loadFromXml] Missing npc tag in ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 152,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 190,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 198,
+          "completeString": "[Warning - Npc::loadFromXml] Health now is greater than health max in ",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 198,
+          "completeString": "[Warning - Npc::loadFromXml] Health now is greater than health max in ",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 215,
+          "completeString": "mount",
+          "match": "mount",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\npc.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\otpch.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\otpch.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\otserv.cpp",
+      "result": [
+        {
+          "line": 99,
+          "completeString": ">> No services running. The server is NOT online.",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 133,
+          "completeString": "unknown",
+          "match": "unknown",
+          "type": "name"
+        },
+        {
+          "line": 136,
+          "completeString": " for Lua support",
+          "match": "Lua",
+          "type": "name"
+        },
+        {
+          "line": 138,
+          "completeString": " for Lua support",
+          "match": "Lua",
+          "type": "name"
+        },
+        {
+          "line": 220,
+          "completeString": "> No tables were optimized.",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 248,
+          "completeString": ">> Loading lua scripts",
+          "match": "lua",
+          "type": "name"
+        },
+        {
+          "line": 250,
+          "completeString": "Failed to load lua scripts",
+          "match": "lua",
+          "type": "name"
+        },
+        {
+          "line": 260,
+          "completeString": ">> Loading lua monsters",
+          "match": "lua",
+          "type": "name"
+        },
+        {
+          "line": 262,
+          "completeString": "Failed to load lua monsters",
+          "match": "lua",
+          "type": "name"
+        },
+        {
+          "line": 282,
+          "completeString": "Unknown world type: {:s}, valid world types are: pvp, no-pvp and pvp-enforced.",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 315,
+          "completeString": "daily",
+          "match": "daily",
+          "type": "name"
+        },
+        {
+          "line": 330,
+          "completeString": " has been executed as root user, please consider running it as a normal user.",
+          "match": "normal",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\outfit.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\outfit.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\outputmessage.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\outputmessage.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\party.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\party.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\player.cpp",
+      "result": [
+        {
+          "line": 120,
+          "completeString": " You have no vocation.",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 130,
+          "completeString": " She",
+          "match": "She",
+          "type": "name"
+        },
+        {
+          "line": 132,
+          "completeString": " He",
+          "match": "He",
+          "type": "name"
+        },
+        {
+          "line": 140,
+          "completeString": " has no vocation.",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 148,
+          "completeString": " She is in a party with ",
+          "match": "She",
+          "type": "name"
+        },
+        {
+          "line": 150,
+          "completeString": " He is in a party with ",
+          "match": "He",
+          "type": "name"
+        },
+        {
+          "line": 175,
+          "completeString": " She is ",
+          "match": "She",
+          "type": "name"
+        },
+        {
+          "line": 177,
+          "completeString": " He is ",
+          "match": "He",
+          "type": "name"
+        },
+        {
+          "line": 642,
+          "completeString": "Warning: unknown reserved key: ",
+          "match": "unknown",
+          "type": "name"
+        },
+        {
+          "line": 1451,
+          "completeString": "There was no variation in your behaviour for ",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 1451,
+          "completeString": " minutes. You will be disconnected in one minute if there is no change in your actions until then.",
+          "match": "will",
+          "type": "name"
+        },
+        {
+          "line": 1451,
+          "completeString": " minutes. You will be disconnected in one minute if there is no change in your actions until then.",
+          "match": "one",
+          "type": "name"
+        },
+        {
+          "line": 1451,
+          "completeString": " minutes. You will be disconnected in one minute if there is no change in your actions until then.",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 1559,
+          "completeString": "You advanced to magic level ",
+          "match": "magic",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\player.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\position.cpp",
+      "result": [
+        {
+          "line": 37,
+          "completeString": "North",
+          "match": "North",
+          "type": "name"
+        },
+        {
+          "line": 45,
+          "completeString": "West",
+          "match": "West",
+          "type": "name"
+        },
+        {
+          "line": 49,
+          "completeString": "South",
+          "match": "South",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\position.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocol.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocol.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolgame.cpp",
+      "result": [
+        {
+          "line": 186,
+          "completeString": "You may only login with one character\\nof your account at the same time.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 186,
+          "completeString": "You may only login with one character\\nof your account at the same time.",
+          "match": "one",
+          "type": "name"
+        },
+        {
+          "line": 186,
+          "completeString": "You may only login with one character\\nof your account at the same time.",
+          "match": "same",
+          "type": "name"
+        },
+        {
+          "line": 212,
+          "completeString": "Too many players online.\\nYou are at place ",
+          "match": "many",
+          "type": "name"
+        },
+        {
+          "line": 233,
+          "completeString": "Temple position is wrong. Contact the administrator.",
+          "match": "Temple",
+          "type": "name"
+        },
+        {
+          "line": 1566,
+          "completeString": "Browse Field",
+          "match": "Field",
+          "type": "name"
+        },
+        {
+          "line": 2042,
+          "completeString": "magic level ",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 2050,
+          "completeString": "speed ",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 2087,
+          "completeString": " oz",
+          "match": "oz",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolgame.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocollogin.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocollogin.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolold.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolold.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolstatus.cpp",
+      "result": [
+        {
+          "line": 121,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 134,
+          "completeString": "magic",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 139,
+          "completeString": "author",
+          "match": "author",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\protocolstatus.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\pugicast.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\quests.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\quests.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\raids.cpp",
+      "result": [
+        {
+          "line": 67,
+          "completeString": "[Error - Raids::loadFromXml] Name tag missing for raid",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 67,
+          "completeString": "[Error - Raids::loadFromXml] Name tag missing for raid",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 77,
+          "completeString": "[Warning - Raids::loadFromXml] File tag missing for raid ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 77,
+          "completeString": "[Warning - Raids::loadFromXml] File tag missing for raid ",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 82,
+          "completeString": "[Error - Raids::loadFromXml] interval2 tag missing or zero (would divide by 0) for raid: ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 89,
+          "completeString": "[Warning - Raids::loadFromXml] margin tag missing for raid: ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 208,
+          "completeString": "raid",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 294,
+          "completeString": "[Error] Raid: delay tag missing.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 310,
+          "completeString": "[Error] Raid: message tag missing for announce event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 333,
+          "completeString": "[Notice] Raid: Unknown type tag missing for announce event. Using default: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 333,
+          "completeString": "[Notice] Raid: Unknown type tag missing for announce event. Using default: ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 337,
+          "completeString": "[Notice] Raid: type tag missing for announce event. Using default: ",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 358,
+          "completeString": "[Error] Raid: name tag missing for singlespawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 365,
+          "completeString": "[Error] Raid: x tag missing for singlespawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 372,
+          "completeString": "[Error] Raid: y tag missing for singlespawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 379,
+          "completeString": "[Error] Raid: z tag missing for singlespawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 415,
+          "completeString": "[Error] Raid: centerx tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 422,
+          "completeString": "[Error] Raid: centery tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 429,
+          "completeString": "[Error] Raid: centerz tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 444,
+          "completeString": "[Error] Raid: fromx tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 451,
+          "completeString": "[Error] Raid: fromy tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 458,
+          "completeString": "[Error] Raid: fromz tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 465,
+          "completeString": "[Error] Raid: tox tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 469,
+          "completeString": "toy",
+          "match": "toy",
+          "type": "name"
+        },
+        {
+          "line": 472,
+          "completeString": "[Error] Raid: toy tag missing for areaspawn event.",
+          "match": "toy",
+          "type": "name"
+        },
+        {
+          "line": 472,
+          "completeString": "[Error] Raid: toy tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 479,
+          "completeString": "[Error] Raid: toz tag missing for areaspawn event.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 490,
+          "completeString": "[Error] Raid: name tag missing for monster node.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 513,
+          "completeString": "[Error] Raid: amount tag missing for monster node.",
+          "match": "tag",
+          "type": "name"
+        },
+        {
+          "line": 559,
+          "completeString": "Error: [ScriptEvent::configureRaidEvent] No script file found for raid",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 559,
+          "completeString": "Error: [ScriptEvent::configureRaidEvent] No script file found for raid",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 564,
+          "completeString": "Error: [ScriptEvent::configureRaidEvent] Can not load raid script.",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 564,
+          "completeString": "Error: [ScriptEvent::configureRaidEvent] Can not load raid script.",
+          "match": "raid",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\raids.h",
+      "result": [
+        {
+          "line": 95,
+          "completeString": "Raid Interface",
+          "match": "Raid",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\rsa.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\rsa.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\scheduler.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\scheduler.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\script.cpp",
+      "result": [
+        {
+          "line": 46,
+          "completeString": "[Warning - Scripts::loadScripts] Can not load folder '\" << folderName << \"'.",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 55,
+          "completeString": "lib",
+          "match": "lib",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\script.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\scriptmanager.cpp",
+      "result": [
+        {
+          "line": 64,
+          "completeString": "[Warning - ScriptingManager::loadScriptSystems] Can not load data/global.lua",
+          "match": "Can",
+          "type": "name"
+        },
+        {
+          "line": 68,
+          "completeString": ">> Loading lua libs",
+          "match": "lua",
+          "type": "name"
+        },
+        {
+          "line": 70,
+          "completeString": "> ERROR: Unable to load lua libs!",
+          "match": "lua",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\scriptmanager.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\server.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\server.h",
+      "result": [
+        {
+          "line": 130,
+          "completeString": "ERROR: No port provided for service ",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 148,
+          "completeString": " cannot use the same port ",
+          "match": "same",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\signals.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\signals.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\spawn.cpp",
+      "result": [
+        {
+          "line": 71,
+          "completeString": "[Warning - Spawns::loadFromXml] Radius size bigger than 30 at position: ",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 108,
+          "completeString": " spawntime can not be less than ",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 108,
+          "completeString": " spawntime can not be less than ",
+          "match": "less",
+          "type": "name"
+        },
+        {
+          "line": 108,
+          "completeString": " spawntime can not be less than ",
+          "match": "than",
+          "type": "name"
+        },
+        {
+          "line": 110,
+          "completeString": " spawntime can not be more than ",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 110,
+          "completeString": " spawntime can not be more than ",
+          "match": "than",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\spawn.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\spectators.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\spells.cpp",
+      "result": [
+        {
+          "line": 138,
+          "completeString": "rune",
+          "match": "rune",
+          "type": "name"
+        },
+        {
+          "line": 161,
+          "completeString": "[Warning - Spells::registerEvent] Duplicate registered rune with id: ",
+          "match": "rune",
+          "type": "name"
+        },
+        {
+          "line": 191,
+          "completeString": "[Warning - Spells::registerRuneLuaEvent] Duplicate registered rune with id: ",
+          "match": "rune",
+          "type": "name"
+        },
+        {
+          "line": 415,
+          "completeString": "speed",
+          "match": "speed",
+          "type": "name"
+        },
+        {
+          "line": 455,
+          "completeString": "special",
+          "match": "special",
+          "type": "name"
+        },
+        {
+          "line": 458,
+          "completeString": "[Warning - Spell::configureSpell] Unknown group: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 476,
+          "completeString": "special",
+          "match": "special",
+          "type": "name"
+        },
+        {
+          "line": 479,
+          "completeString": "[Warning - Spell::configureSpell] Unknown secondarygroup: ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 495,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 503,
+          "completeString": "soul",
+          "match": "soul",
+          "type": "name"
+        },
+        {
+          "line": 515,
+          "completeString": "prem",
+          "match": "prem",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\spells.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\storeinbox.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\storeinbox.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\talkaction.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\talkaction.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tasks.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tasks.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\teleport.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\teleport.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\thing.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\thing.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\thread_holder_base.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tile.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tile.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tools.cpp",
+      "result": [
+        {
+          "line": 31,
+          "completeString": "rb",
+          "match": "rb",
+          "type": "name"
+        },
+        {
+          "line": 64,
+          "completeString": "Line ",
+          "match": "Line",
+          "type": "name"
+        },
+        {
+          "line": 395,
+          "completeString": "north",
+          "match": "north",
+          "type": "name"
+        },
+        {
+          "line": 399,
+          "completeString": "south",
+          "match": "south",
+          "type": "name"
+        },
+        {
+          "line": 401,
+          "completeString": "west",
+          "match": "west",
+          "type": "name"
+        },
+        {
+          "line": 403,
+          "completeString": "south west",
+          "match": "south",
+          "type": "name"
+        },
+        {
+          "line": 403,
+          "completeString": "south west",
+          "match": "west",
+          "type": "name"
+        },
+        {
+          "line": 405,
+          "completeString": "south east",
+          "match": "south",
+          "type": "name"
+        },
+        {
+          "line": 405,
+          "completeString": "se",
+          "match": "se",
+          "type": "name"
+        },
+        {
+          "line": 407,
+          "completeString": "north west",
+          "match": "north",
+          "type": "name"
+        },
+        {
+          "line": 407,
+          "completeString": "north west",
+          "match": "west",
+          "type": "name"
+        },
+        {
+          "line": 409,
+          "completeString": "north east",
+          "match": "north",
+          "type": "name"
+        },
+        {
+          "line": 533,
+          "completeString": "bubbles",
+          "match": "bubbles",
+          "type": "name"
+        },
+        {
+          "line": 580,
+          "completeString": "thunder",
+          "match": "thunder",
+          "type": "name"
+        },
+        {
+          "line": 620,
+          "completeString": "ice",
+          "match": "ice",
+          "type": "name"
+        },
+        {
+          "line": 621,
+          "completeString": "earth",
+          "match": "earth",
+          "type": "name"
+        },
+        {
+          "line": 622,
+          "completeString": "holy",
+          "match": "holy",
+          "type": "name"
+        },
+        {
+          "line": 647,
+          "completeString": "earth",
+          "match": "earth",
+          "type": "name"
+        },
+        {
+          "line": 654,
+          "completeString": "ice",
+          "match": "ice",
+          "type": "name"
+        },
+        {
+          "line": 655,
+          "completeString": "holy",
+          "match": "holy",
+          "type": "name"
+        },
+        {
+          "line": 695,
+          "completeString": "white",
+          "match": "white",
+          "type": "name"
+        },
+        {
+          "line": 698,
+          "completeString": "orange",
+          "match": "orange",
+          "type": "name"
+        },
+        {
+          "line": 725,
+          "completeString": "unknown",
+          "match": "unknown",
+          "type": "name"
+        },
+        {
+          "line": 759,
+          "completeString": "critical hit chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 765,
+          "completeString": "hitpoints leech chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 771,
+          "completeString": "manapoints leech chance",
+          "match": "chance",
+          "type": "name"
+        },
+        {
+          "line": 774,
+          "completeString": "mana points leech amount",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 777,
+          "completeString": "unknown",
+          "match": "unknown",
+          "type": "name"
+        },
+        {
+          "line": 794,
+          "completeString": "axe fighting",
+          "match": "axe",
+          "type": "name"
+        },
+        {
+          "line": 806,
+          "completeString": "magic level",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 812,
+          "completeString": "unknown",
+          "match": "unknown",
+          "type": "name"
+        },
+        {
+          "line": 885,
+          "completeString": "axe",
+          "match": "axe",
+          "type": "name"
+        },
+        {
+          "line": 978,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        },
+        {
+          "line": 1042,
+          "completeString": "You may only use one weapon.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1042,
+          "completeString": "You may only use one weapon.",
+          "match": "one",
+          "type": "name"
+        },
+        {
+          "line": 1070,
+          "completeString": "There is no way.",
+          "match": "no",
+          "type": "name"
+        },
+        {
+          "line": 1076,
+          "completeString": "You can not enter a protection zone after attacking another player.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1094,
+          "completeString": "You do not have the required magic level to use this rune.",
+          "match": "do",
+          "type": "name"
+        },
+        {
+          "line": 1094,
+          "completeString": "You do not have the required magic level to use this rune.",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 1103,
+          "completeString": "You may not logout during or immediately after a fight!",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1112,
+          "completeString": "You do not have enough magic level.",
+          "match": "do",
+          "type": "name"
+        },
+        {
+          "line": 1112,
+          "completeString": "You do not have enough magic level.",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 1115,
+          "completeString": "You do not have enough mana.",
+          "match": "do",
+          "type": "name"
+        },
+        {
+          "line": 1118,
+          "completeString": "You do not have enough soul.",
+          "match": "do",
+          "type": "name"
+        },
+        {
+          "line": 1127,
+          "completeString": "You can only use it on creatures.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1139,
+          "completeString": "You may not attack this person.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1142,
+          "completeString": "You may not attack this creature.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1145,
+          "completeString": "You may not attack a person in a protection zone.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1148,
+          "completeString": "You may not attack a person while you are in a protection zone.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1151,
+          "completeString": "You can only use it on creatures.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1169,
+          "completeString": "You can not leave a pvp zone after attacking another player.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1172,
+          "completeString": "You can not enter a pvp zone after attacking another player.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1175,
+          "completeString": "This action is not permitted in a non pvp zone.",
+          "match": "non",
+          "type": "name"
+        },
+        {
+          "line": 1178,
+          "completeString": "You can not logout here.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1181,
+          "completeString": "You need a magic item to cast this spell.",
+          "match": "magic",
+          "type": "name"
+        },
+        {
+          "line": 1193,
+          "completeString": "You may use only one shield.",
+          "match": "may",
+          "type": "name"
+        },
+        {
+          "line": 1193,
+          "completeString": "You may use only one shield.",
+          "match": "one",
+          "type": "name"
+        },
+        {
+          "line": 1196,
+          "completeString": "No party members in range.",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 1202,
+          "completeString": "No such raid exists.",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 1202,
+          "completeString": "No such raid exists.",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 1205,
+          "completeString": "Another raid is already executing.",
+          "match": "raid",
+          "type": "name"
+        },
+        {
+          "line": 1220,
+          "completeString": "You can not trade this house.",
+          "match": "can",
+          "type": "name"
+        },
+        {
+          "line": 1250,
+          "completeString": "special",
+          "match": "special",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\tools.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\town.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\trashholder.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\trashholder.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\vocation.cpp",
+      "result": [
+        {
+          "line": 121,
+          "completeString": "[Notice - Vocations::loadFromXml] No valid skill id: ",
+          "match": "No",
+          "type": "name"
+        },
+        {
+          "line": 142,
+          "completeString": "armor",
+          "match": "armor",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\vocation.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\weapons.cpp",
+      "result": [
+        {
+          "line": 175,
+          "completeString": "mana",
+          "match": "mana",
+          "type": "name"
+        },
+        {
+          "line": 183,
+          "completeString": "soul",
+          "match": "soul",
+          "type": "name"
+        },
+        {
+          "line": 187,
+          "completeString": "prem",
+          "match": "prem",
+          "type": "name"
+        },
+        {
+          "line": 198,
+          "completeString": "[Warning - Weapon::configureEvent] Unknown action ",
+          "match": "Unknown",
+          "type": "name"
+        },
+        {
+          "line": 901,
+          "completeString": "min",
+          "match": "min",
+          "type": "name"
+        },
+        {
+          "line": 905,
+          "completeString": "max",
+          "match": "max",
+          "type": "name"
+        },
+        {
+          "line": 915,
+          "completeString": "earth",
+          "match": "earth",
+          "type": "name"
+        },
+        {
+          "line": 917,
+          "completeString": "ice",
+          "match": "ice",
+          "type": "name"
+        },
+        {
+          "line": 925,
+          "completeString": "holy",
+          "match": "holy",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\weapons.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\wildcardtree.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\wildcardtree.h",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\xtea.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\antonServer\\forgottenserver\\src\\xtea.h",
+      "result": []
+    }
+  ]
+}

@@ -64,6 +64,7 @@ span {
 }
 
 .show-item-wrapper {
+    display: none;
     padding: 10px;
     font-size: 1.05rem;
 }
@@ -76,4 +77,16 @@ span {
 .inline-text-error {
     display: inline;
     color: rgb(212, 103, 103);
+}
+
+.item-user-options-wrapper {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+.item-user-options-wrapper span {
+    font-weight: 600;
+    margin-bottom: 10px;
 }

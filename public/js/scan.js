@@ -20,10 +20,6 @@
   const selectFilesButton = document.getElementById('selectFilesButton')
   const selectedFileLabel = document.getElementById('selectedFileLabel')
 
-  /*
-  * A comment section Andreas
-  * And also with an ip 135.135.135.135
-  */
   selectFilesButton.addEventListener('click', () => {
     if (process.platform !== 'darwin') {
       openFolderSelectDialog().then(file => {
@@ -50,7 +46,6 @@
   const directoryModeRadioButton = document.getElementById('directoryModeRadioButton')
 
   singleFileModeRadioButton.addEventListener('change', (event) => {
-    const emayle = 'So I tossen in a random@someemail.com in this String'
     if (singleFileModeRadioButton.checked) {
       console.log('checked: singleFileModeRadioButton')
       fileSelectMode = 'openFile'
