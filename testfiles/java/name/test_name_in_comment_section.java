@@ -138,7 +138,7 @@ public class TFTPServer
 	 * 
 	 * @param buf (received request)
 	 * @param requestedFile (name of file to read/write)
-	 * @return opcode (request type: RRQ or WRQ)
+	 * @return opcode (request type: Andreas RRQ or WRQ)
 	 */
 	private int ParseRQ(byte[] buf, StringBuffer requestedFile) 
 	{	
@@ -300,7 +300,7 @@ public class TFTPServer
 			}
 
 		} catch (IOException e) {
-			send_ERR(sendSocket, 2, "Access violation");	// Andreas
+			send_ERR(sendSocket, 2, "Access violation");	//catching all IOExceptions that is not related to error 1 or 6
 		} catch(TimeoutException e) {
 			System.out.println(e.getMessage());
 		} catch(ConnectionClosedException e) {
@@ -309,108 +309,4 @@ public class TFTPServer
 		}
 
 	}
-
-	private boolean send_DATA_receive_ACK(DatagramSocket sendSocket, DatagramPacket newSendPacket, short sBlock) throws IOException, ConnectionClosedException {
-		byte[] buf = new byte[4];
-		DatagramPacket receivePacket = new DatagramPacket(buf, buf.length);
-		long timeStamp = System.currentTimeMillis();
-		try {
-			AtomicBoolean receivedData = new AtomicBoolean();
-			receivedData.set(false);
-			ReceiveThread receiver = new ReceiveThread(sendSocket, receivePacket, receivedData);	//running Socket.receive in a separate thread
-			sendSocket.send(newSendPacket);
-			receiver.start();
-			
-			while(true) {
-			
-				try {
-					Thread.sleep(50);	//delay to not continue locking the boolean
-					if(System.currentTimeMillis() - timeStamp > TIMEOUTDURATION) {
-						receiver.interrupt();
-						throw new TimeoutException("acknowledgement timeout");
-					}
-					if(receivedData.get() == true) {
-						break;	// data received
-					}
-					/*
-					if(System.currentTimeMillis() - timeStamp > TIMEOUTDURATION) {
-						receiver.interrupt();
-						System.out.println("2");
-						throw new TimeoutException("acknowledgement timeout");
-					}*/
-				} catch (InterruptedException e) {
-					//sleep interrupted
-				}
-			}
-			ByteBuffer wrap = ByteBuffer.wrap(buf);
-			short opcode = wrap.getShort(0);
-			short rBlock = wrap.getShort(2);	//read header
-			if(opcode == 4 && rBlock == sBlock) {	//if it is the correct packet
-				return true;
-			}else if(opcode == 5){
-				throw new ConnectionClosedException("Received error message");
-			}
-			return false;
-		} catch (SocketTimeoutException e) {
-			//if implementing setSoSocketTimeout
-			System.out.println("socket timeout");
-			return false;
-		} catch(TimeoutException e) {
-			System.out.println(e.getMessage());
-			return false;
-		}
-	}
-	
-	private boolean receive_DATA_send_ACK(DatagramSocket sendSocket, DatagramPacket receivePacket, int expectedBlock) throws ConnectionClosedException, IOException
-	{
-			sendSocket.receive(receivePacket);	//send the data
-			ByteBuffer wrap = ByteBuffer.wrap(receivePacket.getData());
-			short opcode = wrap.getShort(0);
-			short rBlock = wrap.getShort(2);	//read the first 4 bytes of the response
-			if(opcode == 3) {	//if response is correct code and block
-				byte[] ackBuf = new byte[4];
-				short ackOpcode = 4;
-				ByteBuffer ackWrap = ByteBuffer.wrap(ackBuf);
-				ackWrap.putShort(0, ackOpcode);
-				ackWrap.putShort(2, rBlock);
-				DatagramPacket ackPacket = new DatagramPacket(ackBuf, ackBuf.length);
-				sendSocket.send(ackPacket);	//send an ACK that the packet was received
-				if(rBlock == expectedBlock) {
-					return true;
-				}else {
-					return false;
-				}	
-			}else if(opcode == 5) {
-				throw new ConnectionClosedException("Received error message from client");	//else if response was an error, throw connection closed error
-			}else {
-				send_ERR(sendSocket, 0, "opcode " + opcode + "was received when expecting data");
-			}
-		return false;
-	}
-
-	/**
-	 * 
-	 * @param sendSocket (client socket that wil receive the error message)
-	 * @param errcode	(FTP error code 0 to 6)
-	 * @param errMessage	(error message send with the code)
-	 */
-	private void send_ERR(DatagramSocket sendSocket, int errcode, String errMessage){
-		//[errOpcode(5), errcode(0-6), errMessage(string), end(0)]
-		try {
-			byte[] errBuf = new byte[4 + errMessage.length() + 1];
-			short errOpcode = 5;
-			byte end = 0;
-			ByteBuffer errWrap = ByteBuffer.wrap(errBuf);
-			errWrap.putShort(errOpcode);
-			errWrap.putShort((short)errcode);
-			errWrap.put(errMessage.getBytes());
-			errWrap.put(end);
-			DatagramPacket errPacket = new DatagramPacket(errBuf, errBuf.length);
-			sendSocket.send(errPacket);
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
 }

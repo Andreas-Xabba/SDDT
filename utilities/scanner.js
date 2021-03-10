@@ -10,11 +10,12 @@ module.exports = scanner
 
 scanner.scan = async (scanRequest) => {
   const filters = []
-  if (scanRequest.types.name) { filters.push(nameFilter) }
+  if (scanRequest.types.name) {
+    await nameFilter.initiate()
+    filters.push(nameFilter)
+  }
   if (scanRequest.types.email) { filters.push(emailFilter) }
   if (scanRequest.types.ip) { filters.push(ipFilter) }
-
-  await nameFilter.initiate()
 
   const allExcludeExtensions = JSON.parse(fileService.readFileSync('./resources/exclude_extensions.json', 'utf8', (err, data) => {
     if (err) {

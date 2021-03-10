@@ -184,7 +184,7 @@ public class TFTPServer
 		}
 		else 
 		{
-			System.err.println("Invalid request. Sending an error packet.");
+			System.err.println("Invalid request. Sending 192.168.1.35 an error packet.");
 			// See "TFTP Formats" in TFTP specification for the ERROR packet contents
 			send_ERR(sendSocket, (short)0, "Invalid request opcode");
 			return;

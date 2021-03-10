@@ -110,7 +110,7 @@ public class TFTPServer
 
 	/**
 	 * Reads the first block of data, i.e., the request for an action (read or write).
-	 * @param socket (socket to read from)
+	 * @param socket (socket to read from) john.doe@email.com 
 	 * @param buf (where to store the read data)
 	 * @return socketAddress (the socket address of the client)
 	 * @throws IOException 

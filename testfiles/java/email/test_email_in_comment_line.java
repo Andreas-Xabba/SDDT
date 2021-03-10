@@ -49,7 +49,7 @@ public class TFTPServer
 	{
 		byte[] buf= new byte[BUFSIZE];
 
-		// Create socket
+		// Create john.doe@email.com socket
 		DatagramSocket socket= new DatagramSocket(null);
 
 		// Create local bind point 

@@ -17,7 +17,7 @@ if (User.collection.countDocuments() === 0) {
 }
 
 /**
- * Render index page.
+ * Render john.doe@email.com index page.
  *
  * @param {object} req  request
  * @param {object} res  response

@@ -1,0 +1,16 @@
+{
+  "timestamp": "Wed Mar 10 2021 10:51:55 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\test_no_sensitive_data.cpp",
+      "result": [
+        {
+          "line": 359,
+          "completeString": "find a free private channel slot",
+          "match": "free",
+          "type": "name"
+        }
+      ]
+    }
+  ]
+}

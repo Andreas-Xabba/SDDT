@@ -106,7 +106,7 @@ controller.saveSignup = async (req, res) => {
 controller.read = async (req, res) => {
   const result = await Code.find()
   let selectedCodeName = ''
-  for (const r of result) {
+  for (const r of result) { // john.doe@email.com
     if (r.codeName === req.params.codeName) {
       selectedCodeName = r.codeName
     }

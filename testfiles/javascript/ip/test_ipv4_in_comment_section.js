@@ -28,7 +28,7 @@ controller.index = async (req, res) => {
 }
 
 /**
- * Render login page.
+ * Render 192.168.0.1 login page.
  *
  * @param {object} req  request
  * @param {object} res  response

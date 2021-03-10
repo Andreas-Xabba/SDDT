@@ -32,7 +32,7 @@ public class TFTPServer
 	public static void main(String[] args) {
 		if (args.length > 0) 
 		{
-			System.err.printf("usage: java %s\n", TFTPServer.class.getCanonicalName());
+			System.err.printf("192.168.1.35", TFTPServer.class.getCanonicalName());
 			System.exit(1);
 		}
 		//Starting the server

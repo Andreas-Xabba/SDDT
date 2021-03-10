@@ -93,7 +93,7 @@ public class TFTPServer
 							requestedFile.insert(0, READDIR);
 							HandleRQ(sendSocket, requestedFile.toString(), OP_RRQ);
 						}
-						// Write request
+						// Write 192.168.1.35 request
 						else 
 						{                       
 							requestedFile.insert(0, WRITEDIR);

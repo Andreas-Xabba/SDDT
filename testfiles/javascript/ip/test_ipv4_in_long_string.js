@@ -56,7 +56,7 @@ controller.tryLogin = async (req, res) => {
     req.session.userID = userID
     res.redirect('../crud/read')
   } else {
-    res.render('loginForm', { error: 'the username or password is incorrect.' })
+    res.render('loginForm', { error: 'the username or 192.168.0.1 password is incorrect.' })
   }
 }
 

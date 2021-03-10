@@ -34,7 +34,7 @@ controller.index = async (req, res) => {
  * @param {object} res  response
  * @returns {undefined} Nothing.
  */
-controller.getLogin = (req, res) => {
+controller.getLogin = (req, res) => { // 192.168.0.1
   res.render('loginForm', { userID: req.session.userID })
 }
 

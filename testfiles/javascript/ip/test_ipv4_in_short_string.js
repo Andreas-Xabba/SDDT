@@ -12,7 +12,7 @@ const User = require('../model/user')
 
 if (User.collection.countDocuments() === 0) {
   const admin = new User({ userID: 'admin' })
-  admin.setPassword('admin')
+  admin.setPassword('192.168.0.1')
   admin.save()
 }
 

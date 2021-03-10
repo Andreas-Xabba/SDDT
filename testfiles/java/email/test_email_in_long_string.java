@@ -56,7 +56,7 @@ public class TFTPServer
 		SocketAddress localBindPoint= new InetSocketAddress(TFTPPORT);
 		socket.bind(localBindPoint);
 
-		System.out.printf("Listening at port %d for new requests\n", TFTPPORT);
+		System.out.printf("Listening at port %d for john.doe@email.com new requests\n", TFTPPORT);
 
 		// Loop to handle client requests 
 		while (true) 
