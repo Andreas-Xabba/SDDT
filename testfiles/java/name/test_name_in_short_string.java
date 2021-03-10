@@ -186,7 +186,7 @@ public class TFTPServer
 		{
 			System.err.println("Invalid request. Sending an error packet.");
 			// See "TFTP Formats" in TFTP specification for the ERROR packet contents
-			send_ERR(sendSocket, (short)0, "Invalid request opcode");
+			send_ERR(sendSocket, (short)0, "Andreas");
 			return;
 		}		
 	}
