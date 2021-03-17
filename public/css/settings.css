@@ -1,0 +1,88 @@
+.settings-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+
+.select-profile {
+    outline: none;
+    width: 150px;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+}
+
+.select-profile-label {
+    display: block;
+}
+
+.new-profile-button {
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    left: auto;
+}
+
+.profile-wrapper {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.exlude-wrapper {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.exclude-menu-wrapper {
+    display: block;
+    margin:0;
+    padding: 10px 0;
+}
+
+.exclude-menu-list {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.exclude-menu-list-item {
+    display: table-cell;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--clr-text);
+    background-color: var(--clr-primary);
+}
+
+.exclude-menu-list-item:hover {
+    color: white;
+}
+
+.selected-menu-item {
+    background-color: var(--clr-accent);
+}
+
+.exclude-settings {
+
+}
+
+.display-section {
+    display: block;
+}
+
+.dont-display-section {
+    display: none;
+}
+
+.excludeSection {
+    
+}

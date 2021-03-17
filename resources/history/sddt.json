@@ -1,0 +1,639 @@
+{
+  "timestamp": "Fri Mar 12 2021 09:20:41 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\.env",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\.gitignore",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\app.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\controllers\\mainController.js",
+      "result": [
+        {
+          "line": 21,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        },
+        {
+          "line": 21,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\history.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\menu.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\scan.css",
+      "result": [
+        {
+          "line": 185,
+          "completeString": "Enabling this will automaticly replace any match in the files with the input",
+          "match": "will",
+          "type": "name"
+        },
+        {
+          "line": 185,
+          "completeString": "Enabling this will automaticly replace any match in the files with the input",
+          "match": "any",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\settings.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\style.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\favicon.ico",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\history.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
+      "result": [
+        {
+          "line": 24,
+          "completeString": "darwin",
+          "match": "darwin",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\README.md",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\resources\\names.csv",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\routes\\router.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\SDDT.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\email\\test_email_in_comment_line.cpp",
+      "result": [
+        {
+          "line": 81,
+          "completeString": " TODO: Move to script when john.doe@email.com guild channels can be scripted",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\email\\test_email_in_comment_section.cpp",
+      "result": [
+        {
+          "line": 224,
+          "completeString": "\t\tthis is a john.doe@email.com comment section",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\email\\test_email_in_long_string.cpp",
+      "result": [
+        {
+          "line": 175,
+          "completeString": "[Error - OnJoinChannelEvent::execute] Call john.doe@email.com stack overflow",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\email\\test_email_in_short_string.cpp",
+      "result": [
+        {
+          "line": 33,
+          "completeString": "john.doe@email.com",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\ip\\test_ipv4_in_comment_line.cpp",
+      "result": [
+        {
+          "line": 81,
+          "completeString": " TODO: Move to script when guild 192.168.0.1 channels can be scripted",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\ip\\test_ipv4_in_comment_section.cpp",
+      "result": [
+        {
+          "line": 122,
+          "completeString": "\ta comment 192.168.0.1 section",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\ip\\test_ipv4_in_long_string.cpp",
+      "result": [
+        {
+          "line": 257,
+          "completeString": "Stack size 192.168.0.1 changed!",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\ip\\test_ipv4_in_short_string.cpp",
+      "result": [
+        {
+          "line": 186,
+          "completeString": "192.168.0.1",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\name\\test_name_in_comment_line.cpp",
+      "result": [
+        {
+          "line": 354,
+          "completeString": "only 1 private channel for Andreas each premium player",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\name\\test_name_in_comment_section.cpp",
+      "result": [
+        {
+          "line": 264,
+          "completeString": "\tthis is a comment Andreas section",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\name\\test_name_in_long_string.cpp",
+      "result": [
+        {
+          "line": 175,
+          "completeString": "[Error - OnJoinChannelEvent::execute] Call Andreas stack overflow",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\name\\test_name_in_short_string.cpp",
+      "result": [
+        {
+          "line": 314,
+          "completeString": "Andreas",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\c++\\test_no_sensitive_data.cpp",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\email\\test_email_in_comment_line.java",
+      "result": [
+        {
+          "line": 52,
+          "completeString": " Create john.doe@email.com socket",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\email\\test_email_in_comment_section.java",
+      "result": [
+        {
+          "line": 113,
+          "completeString": "\t * @param socket (socket to read from) john.doe@email.com ",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\email\\test_email_in_long_string.java",
+      "result": [
+        {
+          "line": 59,
+          "completeString": "Listening at port %d for john.doe@email.com new requests\\n",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\email\\test_email_in_short_string.java",
+      "result": [
+        {
+          "line": 59,
+          "completeString": "john.doe@email.com",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\ip\\test_ipv4_in_comment_line.java",
+      "result": [
+        {
+          "line": 96,
+          "completeString": " Write 192.168.1.35 request",
+          "match": "192.168.1.35",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\ip\\test_ipv4_in_comment_section.java",
+      "result": [
+        {
+          "line": 114,
+          "completeString": "\t * @param buf (where to store 192.168.1.35 the read data)",
+          "match": "192.168.1.35",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\ip\\test_ipv4_in_long_string.java",
+      "result": [
+        {
+          "line": 187,
+          "completeString": "Invalid request. Sending 192.168.1.35 an error packet.",
+          "match": "192.168.1.35",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\ip\\test_ipv4_in_short_string..java",
+      "result": [
+        {
+          "line": 35,
+          "completeString": "192.168.1.35",
+          "match": "192.168.1.35",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\name\\test_name_in_comment_line.java",
+      "result": [
+        {
+          "line": 130,
+          "completeString": " Get client address Andreas port from the packet",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\name\\test_name_in_comment_section.java",
+      "result": [
+        {
+          "line": 141,
+          "completeString": "\t * @return opcode (request type: Andreas RRQ or WRQ)",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\name\\test_name_in_long_string.java",
+      "result": [
+        {
+          "line": 178,
+          "completeString": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy Andreas text since the 1500s, when an printer took a galley of type and scrambled it to make a type specimen book.",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\name\\test_name_in_short_string.java",
+      "result": [
+        {
+          "line": 189,
+          "completeString": "Andreas",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\java\\test_no_sensitive_data.java",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\email\\test_email_in_comment_line.js",
+      "result": [
+        {
+          "line": 109,
+          "completeString": " john.doe@email.com",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\email\\test_email_in_comment_section.js",
+      "result": [
+        {
+          "line": 20,
+          "completeString": " * Render john.doe@email.com index page.",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\email\\test_email_in_long_string.js",
+      "result": [
+        {
+          "line": 59,
+          "completeString": "the username or john.doe@email.com password is incorrect.",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\email\\test_email_in_short_string.js",
+      "result": [
+        {
+          "line": 15,
+          "completeString": "john.doe@email.com",
+          "match": "john.doe@email.com",
+          "type": "email"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\ip\\test_ipv4_in_comment_line.js",
+      "result": [
+        {
+          "line": 37,
+          "completeString": " 192.168.0.1",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\ip\\test_ipv4_in_comment_section.js",
+      "result": [
+        {
+          "line": 31,
+          "completeString": " * Render 192.168.0.1 login page.",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\ip\\test_ipv4_in_long_string.js",
+      "result": [
+        {
+          "line": 59,
+          "completeString": "the username or 192.168.0.1 password is incorrect.",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\ip\\test_ipv4_in_short_string.js",
+      "result": [
+        {
+          "line": 15,
+          "completeString": "192.168.0.1",
+          "match": "192.168.0.1",
+          "type": "ip"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\name\\test_name_in_comment_line.js",
+      "result": [
+        {
+          "line": 38,
+          "completeString": " Andreas",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\name\\test_name_in_comment_section.js",
+      "result": [
+        {
+          "line": 43,
+          "completeString": " * Matches username/password Andreas with database.",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\name\\test_name_in_long_string.js",
+      "result": [
+        {
+          "line": 170,
+          "completeString": "500 Internal server error andreas if update data failed",
+          "match": "andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\name\\test_name_in_short_string.js",
+      "result": [
+        {
+          "line": 112,
+          "completeString": "Andreas",
+          "match": "Andreas",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\javascript\\test_no_sensitive_data.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testfiles\\python\\test_no_sensitive_data.py",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\testscript.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\emailFilter.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\ipFilter.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\filters\\nameFilter.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\utilities\\scanner.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\history.hbs",
+      "result": [
+        {
+          "line": 29,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\index.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\layouts\\main.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\partials\\mainMenu.hbs",
+      "result": [
+        {
+          "line": 10,
+          "completeString": "scan",
+          "match": "scan",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\scan.hbs",
+      "result": [
+        {
+          "line": 22,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 23,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 29,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 30,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 31,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 32,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 32,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 33,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        },
+        {
+          "line": 33,
+          "completeString": "true",
+          "match": "true",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\settings.hbs",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\views\\statistics.hbs",
+      "result": []
+    }
+  ]
+}

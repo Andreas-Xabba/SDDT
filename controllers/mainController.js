@@ -8,6 +8,29 @@ module.exports = controller
 
 let clients
 
+const settings = JSON.parse(fileService.readFileSync('./resources/settings.json', 'utf8', (err, data) => {
+  if (err) {
+    console.log(err)
+  } else {
+    return data
+  }
+}))
+
+let activeProfile = JSON.parse(fileService.readFileSync(`./resources/profiles/${settings.profile}.json`, 'utf8', (err, data) => {
+  if (err) {
+    console.log(err)
+  } else {
+    return data
+  }
+}))
+
+const profiles = {
+  data: []
+}
+fileService.readdirSync('./resources/profiles/').forEach(File => {
+  profiles.data.push(File.slice(0, File.length - 5))
+})
+
 controller.renderIndex = (req, res) => {
   res.render('index', { layout: 'main', menuSelected: 'index' })
 }
@@ -37,7 +60,7 @@ controller.renderScanResult = (req, res, next) => {
 controller.scanFiles = async (req, res) => {
   const scanRequest = req.body
   console.log(scanRequest)
-  scanner.scan(scanRequest).then(async (results) => {
+  scanner.scan(scanRequest, activeProfile).then(async (results) => {
     try {
       await _trySaveResults(scanRequest.saveFileName, results)
       webContents.getFocusedWebContents().loadURL(`http://localhost:8080/history/${scanRequest.saveFileName}.json`) // manually loading redirect url into electron window
@@ -48,11 +71,6 @@ controller.scanFiles = async (req, res) => {
     console.log(err)
   })
   // LOAD ANOTHER URL MEANWHILE DATA IS BEING HANDLED TO AVOID "PROCESS DONT ANSWER"
-}
-
-controller.scanFilesCLI = async (scanRequest) => {
-  const results = await scanner.scan(scanRequest)
-  return results
 }
 
 controller.renderHistory = async (req, res) => {
@@ -66,7 +84,41 @@ controller.renderStatistics = (req, res) => {
 }
 
 controller.renderSettings = (req, res) => {
-  res.render('settings', { layout: 'main', menuSelected: 'settings' })
+  res.render('settings', { layout: 'main', menuSelected: 'settings', profiles: JSON.stringify(profiles), activeProfile: JSON.stringify(activeProfile) })
+}
+
+controller.changeProfile = (req, res) => {
+  console.log(req.body)
+  const profileID = req.body.profile
+
+  activeProfile = JSON.parse(fileService.readFileSync(`./resources/profiles/${profileID}.json`, 'utf8', (err, data) => {
+    if (err) {
+      console.log(err)
+    } else {
+      return data
+    }
+  }))
+  webContents.getFocusedWebContents().loadURL('http://localhost:8080/settings/')
+  // res.render('settings', { layout: 'main', menuSelected: 'settings', profiles: JSON.stringify(profiles), activeProfile: JSON.stringify(activeProfile) })
+}
+
+controller.updateProfile = (req, res) => {
+  res.render('settings', { layout: 'main', menuSelected: 'settings', profiles: JSON.stringify(profiles), activeProfile: JSON.stringify(activeProfile) })
+}
+
+controller.createProfile = (req, res) => {
+  // update profiles
+  res.render('settings', { layout: 'main', menuSelected: 'settings', profiles: JSON.stringify(profiles), activeProfile: JSON.stringify(activeProfile) })
+}
+
+controller.deleteProfile = (req, res) => {
+  const profiles = {
+    data: []
+  }
+  fileService.readdirSync('./resources/profiles/').forEach(File => {
+    profiles.data.push(File.slice(0, File.length - 5))
+  })
+  res.render('settings', { layout: 'main', menuSelected: 'settings', profiles: JSON.stringify(profiles), activeProfile: JSON.stringify(activeProfile) })
 }
 
 controller.addClientsReference = (clientsRef) => {

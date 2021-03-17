@@ -1,0 +1,27 @@
+{
+    "profileID": "default",
+    "excludeExtensions": {
+        "image_extensions": [".tif", ".tiff", ".bmp", ".jpg", ".jpeg", ".gif", ".png", ".epg", ".raw", ".cr2", ".nef", ".orf", ".sr2"],
+        "other": [".json"]
+    },
+    "excludeFiles": {
+        "node_files": ["package-lock.json", "package.json"]
+    },
+    "moduleDirectories": {
+        "directories": ["node_modules", ".git"]
+    },
+    "excludeMatch": {
+        "name": [],
+        "email": [],
+        "ip": [],
+        "password": [],
+        "key": []
+    },
+    "includeRegex": {
+        "name": [],
+        "email": [],
+        "ip": [],
+        "password": [],
+        "key": []
+    }
+}

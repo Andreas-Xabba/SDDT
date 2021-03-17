@@ -8,7 +8,7 @@ const emailFilter = require('../utilities/filters/emailFilter')
 const scanner = {}
 module.exports = scanner
 
-scanner.scan = async (scanRequest) => {
+scanner.scan = async (scanRequest, profile) => {
   const filters = []
   if (scanRequest.types.name) {
     await nameFilter.initiate()
@@ -17,22 +17,9 @@ scanner.scan = async (scanRequest) => {
   if (scanRequest.types.email) { filters.push(emailFilter) }
   if (scanRequest.types.ip) { filters.push(ipFilter) }
 
-  const allExcludeExtensions = JSON.parse(fileService.readFileSync('./resources/exclude_extensions.json', 'utf8', (err, data) => {
-    if (err) {
-      console.log(err)
-    } else {
-      return data
-    }
-  }))
+  const allExcludeExtensions = profile.excludeExtensions
   const excludeExtensions = [...allExcludeExtensions.image_extensions, ...allExcludeExtensions.other]
-
-  const excludeDirectories = JSON.parse(fileService.readFileSync('./resources/module_directories.json', 'utf8', (err, data) => {
-    if (err) {
-      console.log(err)
-    } else {
-      return data
-    }
-  })).directories
+  const excludeDirectories = profile.moduleDirectories.directories
 
   let filePaths = []
   if (scanRequest.mode === 'openFile') {

@@ -17,6 +17,10 @@ router.get('/history/:scanID', controller.renderScanResult)
 router.get('/statistics', controller.renderStatistics)
 
 router.get('/settings', controller.renderSettings)
+router.post('/settings/change', controller.changeProfile)
+router.post('/settings/update', controller.updateProfile)
+router.post('/settings/create', controller.createProfile)
+router.post('/settings/delete', controller.deleteProfile)
 
 routerExports.send = (message) => {
   controller.send(message)

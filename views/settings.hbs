@@ -1,1 +1,52 @@
-<h2>Settings</h2>
+<link rel="stylesheet" type="text/css" href="/css/settings.css" />
+<div class="settings-wrapper">
+    <div class="profile-wrapper">
+        <label for="selectProfile" class="select-profile-label">Profile</label>
+        <select id="selectProfile" class="select-profile">
+            
+        </select>
+        <button class="new-profile-button">New profile</button>
+    </div>
+
+    <div class="exlude-wrapper">
+
+        <div class="exclude-menu-wrapper">
+            <ul class="exclude-menu-list">
+                <li id="excludeMenuGeneral" class="exclude-menu-list-item">General</li>
+                <li id="excludeMenuName" class="exclude-menu-list-item">Name</li>
+                <li id="excludeMenuEmail" class="exclude-menu-list-item">Email</li>
+                <li id="excludeMenuIP" class="exclude-menu-list-item">IP</li>
+                <li id="excludeMenuPassword" class="exclude-menu-list-item">Password</li>
+                <li id="excludeMenuKey" class="exclude-menu-list-item">Key</li>
+            </ul>
+        </div>
+
+        <div id="generalSection" class="dont-display-section">
+            <div id="excludeSection" class="exclude-section">
+                <select id="excludeCategorySelector">
+                    <option value="extensions">extensions</option>
+                    <option value="files">files</option>
+                    <option value="directories">directories</option>
+                </select>
+            </div>
+        </div>
+        <div id="nameSection" class="dont-display-section">
+            name
+        </div>
+        <div id="emailSection" class="dont-display-section">
+            email
+        </div>
+        <div id="ipSection" class="dont-display-section">
+            ip
+        </div>
+        <div id="passwordSection" class="dont-display-section">
+            password
+        </div>
+        <div id="keySection" class="dont-display-section">
+            key
+        </div>
+    </div>
+    <button id="saveSettingsButton">Save</button>
+</div>
+<script src="/js/settings.js"></script>
+<script>initiateSettings({{{profiles}}}, {{{activeProfile}}})</script>

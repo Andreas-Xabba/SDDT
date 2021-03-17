@@ -1,16 +1,15 @@
 (async function () {
   'use strict'
   const Path = require('path')
-  const controller = require('./controllers/mainController')
+  const scanner = require('./utilities/scanner')
 
   const scanRequest = {
     path: Path.join(__dirname, 'testfiles'),
-    saveFileName: 'testscan',
     mode: 'openDirectory',
     types: { name: true, email: true, ip: true, password: true, key: true },
     options: { comments: true }
   }
-  const results = await controller.scanFilesCLI(scanRequest)
+  const results = await scanner.scan(scanRequest)
   const testResults = []
   for (const result of results) {
     if (result.absolutePath.includes('test_no_sensitive_data')) {
