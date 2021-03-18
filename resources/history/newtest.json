@@ -1,0 +1,78 @@
+{
+  "timestamp": "Fri Mar 19 2021 00:17:14 GMT+0100 (centraleuropeisk normaltid)",
+  "results": [
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\history.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\menu.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\scan.css",
+      "result": [
+        {
+          "line": 185,
+          "completeString": "Enabling this will automaticly replace any match in the files with the input",
+          "match": "will",
+          "type": "name"
+        },
+        {
+          "line": 185,
+          "completeString": "Enabling this will automaticly replace any match in the files with the input",
+          "match": "any",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\settings.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\css\\style.css",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\favicon.ico",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\history.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\main.js",
+      "result": []
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\scan.js",
+      "result": [
+        {
+          "line": 24,
+          "completeString": "darwin",
+          "match": "darwin",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "absolutePath": "C:\\Users\\xabba\\Desktop\\SDDT\\public\\js\\settings.js",
+      "result": [
+        {
+          "line": 109,
+          "completeString": "default case",
+          "match": "case",
+          "type": "name"
+        },
+        {
+          "line": 404,
+          "completeString": "default case",
+          "match": "case",
+          "type": "name"
+        }
+      ]
+    }
+  ]
+}

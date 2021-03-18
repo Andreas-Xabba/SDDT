@@ -20,6 +20,12 @@ main {
     min-width: 500px;
 }
 
+h4, h5 {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
 .main-window-menu {
     display: block;
     margin: 20px auto;

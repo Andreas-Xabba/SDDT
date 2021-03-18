@@ -11,17 +11,17 @@
         "directories": ["node_modules", ".git"]
     },
     "excludeMatch": {
-        "name": [],
-        "email": [],
-        "ip": [],
-        "password": [],
-        "key": []
+        "name": ["John"],
+        "email": ["john.doe@mail.com"],
+        "ip": ["123.123.123.123"],
+        "password": ["password"],
+        "key": ["asdfgh1231jkasduy%asd"]
     },
-    "includeRegex": {
-        "name": [],
-        "email": [],
-        "ip": [],
-        "password": [],
-        "key": []
+    "includeMatch": {
+        "name": ["bestnameever"],
+        "email": ["super.awesome@mail.com"],
+        "ip": ["321.321.321.321"],
+        "password": ["hardpassword"],
+        "key": ["somekey"]
     }
 }
